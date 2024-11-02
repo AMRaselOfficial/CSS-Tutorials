@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flex-direction</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>flex-direction</strong> property specifies the direction of the flexible items.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>flex-direction:</strong> row|row-reverse|column|column-reverse|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Value</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <tr>
+        <td>row</td>
+        <td>(default) The flexible items are displayed horizontally, as a row</td>
+      </tr>
+      <tr>
+        <td>row-reverse</td>
+        <td>Same as row, but in reverse order</td>
+      </tr>
+      <tr>
+        <td>column</td>
+        <td>The flexible items are displayed vertically, as a column</td>
+      </tr>
+      <tr>
+        <td>column-reverse</td>
+        <td>Same as column, but in reverse order</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>The following example shows the basic use of this property:</p>
+
+    <pre><code>&lt;style&gt;
+.container {
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction: column;
+  -webkit-flex-direction: column; /* Safari */
+  border: solid 1px blue;
+}
+
+.item {
+  margin: 5px;
+  height: 50px;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #3A87AD;
+  color: white;
+}
+
+.blue-item {
+  flex: 1;
+  -webkit-flex: 1; /* Safari */
+}
+
+.red-item {
+  flex: 2;
+  -webkit-flex: 2; /* Safari */
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;item red-item&quot;&gt;Item 2&lt;/div&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+      <style scoped>
+        .container {
+          display: flex;
+          display: -webkit-flex; /* Safari */
+          flex-direction: column;
+          -webkit-flex-direction: column; /* Safari */
+          border: solid 1px blue;
+        }
+
+        .item {
+          margin: 5px;
+          height: 50px;
+          padding: 6px;
+          border-radius: 4px;
+          background-color: #3A87AD;
+          color: white;
+        }
+
+        .blue-item {
+          flex: 1;
+          -webkit-flex: 1; /* Safari */
+        }
+
+        .red-item {
+          flex: 2;
+          -webkit-flex: 2; /* Safari */
+        }
+      </style>
+
+      <div class="container">
+        <div class="item blue-item">Item 1</div>
+        <div class="item red-item">Item 2</div>
+        <div class="item blue-item">Item 3</div>
+      </div>
+    </div>
+
+
+    <h1 class="common">Browser Support</h1>
+
+    <table class="reference bsReference">
+      <tr>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>IE</th>
+        <th>Safari</th>
+        <th>Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">29.0<br/>21.0 -webkit-</td>
+        <td class="bsSupportedAll">28.0<br/>18.0 -moz-</td>
+        <td class="bsSupportedAll">11.0<br/>10.0 -ms-</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.10</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">row</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

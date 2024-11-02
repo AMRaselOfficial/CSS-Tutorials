@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute Selector</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>
+      The <strong>attribute selector</strong> matches elements that have a particular value for a particular
+      attribute.
+    </p>
+
+    <p>Attribute selectors are delimited by square brackets.</p>
+
+    <p>This selector has the following three forms:</p>
+        <pre><code><em>E[attribute] {</em>
+  <em>properties</em>
+}</code></pre>
+
+    <p>This form matches all E elements that have an attribute named <em>attribute</em>.</p>
+
+        <pre><code><em>E[attribute=&quot;value&quot;] {</em>
+  <em>properties</em>
+}</code></pre>
+
+    <p>This form matches all E elements that have an attribute named <em>attribute</em> with a value of <em>value</em>.</p>
+
+        <pre><code><em>E[attribute~=&quot;value&quot;] {</em>
+  <em>properties</em>
+}</code></pre>
+
+    <p>This form matches all E elements that have an attribute named <em>attribute</em> with a space-separated list of values, one of which is <em>value</em>.</p>
+
+    <p>This form can also be used to match elements with a specific class by specifying <code class="common">class</code> as the <em>attribute</em>.</p>
+
+    <p><b>Note:</b> For the last form, "|=" can be used instead of "~=" to match a hyphen-separated list of values.</p>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example colors the text red for every <code class="common">h1</code> element that has <code class="common">intro</code> as the class.</p>
+
+        <pre><code>h1[class~="intro"] {
+  color:red;
+}</code></pre>
+
+
+    <p>This selector would match both:<br/>
+      <code class="common">&lt;h1 class=&quot;intro&quot;&gt;</code> and<br/>
+      <code class="common">&lt;h1 class=&quot;example intro&quot;&gt;</code>, but not<br/>
+      <code class="common">&lt;h1 class=&quot;introduction&quot;&gt;</code>.</p>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

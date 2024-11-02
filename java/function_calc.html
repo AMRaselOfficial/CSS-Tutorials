@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>calc()</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>The <strong>calc()</strong> function is used to apply math operations to length values.</p>
+
+    <p>This function has the form:</p>
+    <pre><code>calc(<em>v1</em> <em>operator</em> <em>v2</em>)</code></pre>
+
+    <h1 class="common">Arguments</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Name</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <tr>
+        <td><em>v1</em></td>
+        <td>Specifies the first value</td>
+      </tr>
+      <tr>
+        <td><em>operator</em></td>
+        <td>
+          <p>Specifies the operator. Value operators include:</p>
+
+          <p>
+            <strong>+</strong><br/>
+            Addition
+          </p>
+
+          <p>
+            <strong>-</strong><br/>
+            Subtraction
+          </p>
+
+          <p>
+            <strong>*</strong><br/>
+            Multiplication
+          </p>
+
+          <p>
+            <strong>/</strong><br/>
+            Division
+          </p>
+
+          <p>
+            <strong>mod</strong><br/>
+            Modulus
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><em>v2</em></td>
+        <td>Specifies the second value</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example shows how to calculate the length values for the <code class="common">margin</code> property:</p>
+
+        <pre><code>p {
+  margin:<br/>    calc(1rem - 2px)<br/>    calc(1rem - 1px)
+}</code></pre>
+
+    <p>In this example, the top and bottom margins are calculated as two pixels less than the font size of the root element. The left and right margins as one pixel less than the font size of the root element.</p>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

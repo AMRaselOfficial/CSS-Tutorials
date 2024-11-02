@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>font-family</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>font-family</strong> property sets the font for an element.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>font-family:</strong> <em>family-name</em>|<em>generic-family</em>|initial|inherit;</pre>
+
+    <p>
+      The
+      <strong>font-family</strong> property can use several font names as a "fallback" system. If the browser does not support the first specified font, it tries the next specified font.
+    </p>
+
+    <p>There are two types of font family names:</p>
+
+    <ul>
+      <li class="common"><b>family-name</b> - The name of a font-family, like "times", "courier", "arial", etc.</li>
+      <li class="common"><b>generic-family</b> - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy", "monospace".</li>
+    </ul>
+
+    <p><b>Note:</b> Separate each font value with a comma.</p>
+
+    <p><b>Note: </b>If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.</p>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="20%">Value</th>
+        <th align="left" width="80%">Description</th>
+      </tr>
+      <tr>
+        <td><em>family-name<br/>
+          generic-family</em></td>
+        <td>A list of font family names and/or generic family names.</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example specifies the font for a paragraph.</p>
+
+        <pre><code>p.sansserif {
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+p.serif {
+  font-family:&quot;Times New Roman&quot;,Times,serif;
+}
+
+&lt;p class=&quot;sansserif&quot;&gt;This is the Arial font.&lt;/p&gt;
+&lt;p class=&quot;serif&quot;&gt;This is the Times New Roman font.&lt;/p&gt;</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+      <p style="font-family: Arial, Helvetica, sans-serif;">This is the Arial font.</p>
+
+      <p style="font-family: &quot; Times New Roman&quot; , Times, serif;">This is the Times New Roman font.</p>
+    </div>
+    <br/>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">5.5</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">7.0</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">Yes</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS1</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%"><em>depends on the browser</em></td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

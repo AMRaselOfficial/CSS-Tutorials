@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>font-weight</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>font-weight</strong> property sets how thick or thin the characters in text should be displayed.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>font-weight:</strong> normal|bold|bolder|lighter|<em>value</em>|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left">Value</th>
+        <th align="left">Description</th>
+      </tr>
+      <tr>
+        <td>normal</td>
+        <td>(default) Sets normal characters</td>
+      </tr>
+      <tr>
+        <td>bold</td>
+        <td>Sets thick characters</td>
+      </tr>
+      <tr>
+        <td>bolder</td>
+        <td>Sets thicker characters</td>
+      </tr>
+      <tr>
+        <td>lighter</td>
+        <td>Sets lighter characters</td>
+      </tr>
+      <tr>
+        <td>100<br/>
+          200<br/>
+          300<br/>
+          400<br/>
+          500<br/>
+          600<br/>
+          700<br/>
+          800<br/>
+          900
+        </td>
+
+        <td>Sets from thin to thick characters. 400 is the same as normal, and 700 is the same as bold</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example sets different font weight for two paragraphs.</p>
+
+        <pre><code>p.normal {font-weight:normal}
+p.thick {font-weight:bold}</code></pre>
+
+    <br/>
+
+    <p>This example shows the results of setting the various font-weight values:</p>
+
+    <div class="output">
+      <span style="font-weight: normal">font-weight:normal</span><br/>
+      <br/>
+      <span style="font-weight: bold">font-weight:bold</span><br/>
+      <br/>
+      <span style="font-weight: bolder">font-weight:bolder</span><br/>
+      <br/>
+      <span style="font-weight: lighter">font-weight:lighter</span>
+    </div>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">2.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">1.3</td>
+        <td class="bsSupportedAll">3.5</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">Yes</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS1</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">normal</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

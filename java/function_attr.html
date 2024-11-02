@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>attr()</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>The <strong>attr()</strong> function returns the value of the specified attribute.</p>
+
+    <p>This function has the form:</p>
+    <pre><code>attr(<em>attribute</em> [',' <em>&lt;type&gt;</em> [ ',' <em>&lt;value&gt;</em> ]])</code></pre>
+
+    <p>In CSS 2.1, the attr function only returns a string and can only be used with the content CSS property.</p>
+
+    <p>In CSS 3, functionality was expanded but is still very limited and varies widely between browsers. For example, IE8 and later can only take one argument.</p>
+
+    <h1 class="common">Arguments</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Name</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <tr>
+        <td><em>attribute</em></td>
+        <td>Specifies the attribute name. An optional namespace can be specifed separated by '|'</td>
+      </tr>
+      <tr>
+        <td><em>type</em></td>
+        <td>
+          <p>(optional) Specifies how to interpret the attribute. Valid values include:</p>
+
+          <p>
+            <strong>string</strong><br/>
+            (default) Interpret as a CSS string
+          </p>
+
+          <p>
+            <strong>color</strong><br/>
+            interpret as a CSS color value
+          </p>
+
+          <p>
+            <strong>url</strong><br/>
+            interpret as the URI part of a 'url()' expression
+          </p>
+
+          <p>
+            <strong>integer</strong><br/>
+            interpret as a CSS integer. default = 0
+          </p>
+
+          <p>
+            <strong>number</strong><br/>
+            interpret as a CSS number. default = 0.0
+          </p>
+
+          <p>
+            <strong>length</strong><br/>
+            interpret as a CSS length. default = 0
+          </p>
+
+          <p>
+            <strong>angle</strong><br/>
+            interpret as a CSS angle. default = 0
+          </p>
+
+          <p>
+            <strong>time</strong><br/>
+            interpret as a CSS time. default = 0
+          </p>
+
+          <p>
+            <strong>frequency</strong><br/>
+            interpret as a CSS frequency. default = 0<br/>
+          </p>
+
+          <p>
+            <strong>em</strong><br/>
+            <strong>ex</strong><br/>
+            <strong>px</strong><br/>
+            <strong>mm</strong><br/>
+            <strong>cm</strong><br/>
+            <strong>in</strong><br/>
+            <strong>pt</strong><br/>
+            <strong>pc</strong><br/>
+            <strong>deg</strong><br/>
+            <strong>grad</strong><br/>
+            <strong>rad</strong><br/>
+            <strong>ms</strong><br/>
+            <strong>s</strong><br/>
+            <strong>Hz</strong><br/>
+            <strong>kHz</strong><br/>
+            interpret as a floating point value with the type suffixed as the unit. default = 0 with the relavant unit
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><em>value</em></td>
+        <td>(optional) Specifies a valid CSS value</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example shows how to set a width based upon a length:</p>
+
+    <pre class="common"><strong>width:</strong> attr(length);</pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2.1</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>outline-width</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>outline-width</strong> sets the width of an outline.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>outline-width:</strong> thin|medium|thick|<em>length</em>|initial|inherit;</pre>
+
+    <p><b>Note:</b> Always declare the outline-style property before the outline-width property. An element must have and outline before the outline width can be changed.</p>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Value</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <tr>
+        <td>thin</td>
+        <td>Specifies a thin outline</td>
+      </tr>
+      <tr>
+        <td>medium</td>
+        <td>(default) Specifies a medium outline</td>
+      </tr>
+      <tr>
+        <td>thick</td>
+        <td>Specifies a thick outline</td>
+      </tr>
+      <tr>
+        <td><em>length</em></td>
+        <td>Sets the thickness of the outline</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+    <h1 class="common">Examples</h1>
+
+    <p>This example sets the outline style to dashed and the width to 5 pixels for all paragraph elements.</p>
+
+        <pre><code>p {
+  outline-style: dashed;
+  outline-width:5px;
+}</code></pre>
+
+    <br/>
+
+    <p>This example shows the results of setting the various outline-width values:</p>
+
+    <div class="output">
+      <span style="outline-style: solid; outline-width: thin">outline-width:thin</span><br/>
+      <br/>
+      <span style="outline-style: solid; outline-width: medium">outline-width:medium</span><br/>
+      <br/>
+      <span style="outline-style: solid; outline-width: thick">outline-width:thick</span>
+    </div>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">1.5</td>
+        <td class="bsSupportedAll">8.0</td>
+        <td class="bsSupportedAll">1.2</td>
+        <td class="bsSupportedAll">7.0</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">medium</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

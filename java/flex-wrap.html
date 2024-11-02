@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flex-wrap</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>flex-wrap</strong> property specifies whether the flexible items should wrap or not.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>flex-wrap:</strong> nowrap|wrap|wrap-reverse|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Value</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <tr>
+        <td>nowrap</td>
+        <td>(default) Specifies that the flexible items will not wrap</td>
+      </tr>
+      <tr>
+        <td>wrap</td>
+        <td>Specifies that the flexible items will wrap if necessary</td>
+      </tr>
+      <tr>
+        <td>wrap-reverse</td>
+        <td>Specifies that the flexible items will wrap, if necessary, in reverse order</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>The following example shows the basic use of this property:</p>
+
+    <pre><code>&lt;style&gt;
+.container {
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-wrap: wrap;
+  border: solid 1px blue;
+}
+
+.item {
+  margin: 5px;
+  height: 50px;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #3A87AD;
+  color: white;
+  flex-grow: 1;
+  -webkit-flex-grow: 1; /* Safari */
+}
+
+.blue-item {
+  width: 100px;
+}
+
+.red-item {
+  width: 200px;
+}
+
+.green-item {
+  width: 50px;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;container&quot; style=&quot;width: 75%;&quot;&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;item red-item&quot;&gt;Item 2&lt;/div&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 3&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 4&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 5&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+&lt;div class=&quot;container&quot; style=&quot;width: 50%;&quot;&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;item red-item&quot;&gt;Item 2&lt;/div&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 3&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 4&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 5&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+&lt;div class=&quot;container&quot; style=&quot;width: 25%;&quot;&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;item red-item&quot;&gt;Item 2&lt;/div&gt;
+  &lt;div class=&quot;item blue-item&quot;&gt;Item 3&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 4&lt;/div&gt;
+  &lt;div class=&quot;item green-item&quot;&gt;Item 5&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+      <style scoped>
+        .container {
+          display: flex;
+          display: -webkit-flex; /* Safari */
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap; /* Safari */
+          border: solid 1px blue;
+        }
+
+        .item {
+          margin: 5px;
+          height: 50px;
+          padding: 6px;
+          border-radius: 4px;
+          background-color: #3A87AD;
+          color: white;
+
+          flex-grow: 1;
+          -webkit-flex-grow: 1; /* Safari */
+        }
+
+        .blue-item {
+          width: 100px;
+        }
+
+        .red-item {
+          width: 200px;
+        }
+
+        .green-item {
+          width: 50px;
+        }
+      </style>
+
+      <div class="container" style="width: 75%;">
+        <div class="item blue-item">Item 1</div>
+        <div class="item red-item">Item 2</div>
+        <div class="item blue-item">Item 3</div>
+        <div class="item green-item">Item 4</div>
+        <div class="item green-item">Item 5</div>
+      </div>
+      <br/>
+      <div class="container" style="width: 50%;">
+        <div class="item blue-item">Item 1</div>
+        <div class="item red-item">Item 2</div>
+        <div class="item blue-item">Item 3</div>
+        <div class="item green-item">Item 4</div>
+        <div class="item green-item">Item 5</div>
+      </div>
+      <br/>
+      <div class="container" style="width: 25%;">
+        <div class="item blue-item">Item 1</div>
+        <div class="item red-item">Item 2</div>
+        <div class="item blue-item">Item 3</div>
+        <div class="item green-item">Item 4</div>
+        <div class="item green-item">Item 5</div>
+      </div>
+    </div>
+
+    <h1 class="common">Browser Support</h1>
+
+    <table class="reference bsReference">
+      <tr>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>IE</th>
+        <th>Safari</th>
+        <th>Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">29.0<br/>21.0 -webkit-</td>
+        <td class="bsSupportedAll">28.0<br/>18.0 -moz-</td>
+        <td class="bsSupportedAll">11.0<br/>10.0 -ms-</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.10</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">nowrap</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
