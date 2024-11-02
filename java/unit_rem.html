@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rem</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>A <strong>rem</strong> is a measurement based upon the root element's font size. Fractional values are allowed.</p>
+
+    <p>The rem unit is defined as "equal to the computed value of
+      <code class="common">font-size</code> on the root element." A root element is an element that has no parent. In an HTML document, the root element is the <code class="common">&lt;html&gt;</code> element.
+    </p>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example sets the body font size to 14 pixels:</p>
+
+        <pre><code>html {
+  font-size:14px;
+}
+
+h1 { font-size: 2.0rem; } /* =28px */
+h2 { font-size: 1.5rem; } /* =21px */
+p { font-size: 1.0rem; } /* =14px */
+
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;p&gt;Paragraph&lt;/p&gt;</code></pre>
+    <p>This produces the following output:</p>
+
+    <div class="output">
+      <style>
+        h1.remtest {
+          font-size: 28px;
+        }
+
+        h2.remtest {
+          font-size: 21px;
+        }
+
+        p.remtest {
+          font-size: 14px;
+        }
+      </style>
+      <h1 class="remtest">Header 1</h1>
+
+      <h2 class="remtest">Header 2</h2>
+
+      <p class="remtest">Paragraph</p>
+    </div>
+
+    <br/>
+    <br/>
+
+    <p>This example shows the compounding issue when using <code class="common">&lt;em&gt;</code> unit and how using the <code class="common">&lt;rem&gt;</code> font size unit fixes it:</p>
+
+        <pre><code>&lt;style&gt;li.emtest { font-size: 0.75em; }&lt;/style&gt;
+&lt;style&gt;li.remtest { font-size: 0.75rem; }&lt;/style&gt;
+
+Example using 'em' units (compounding issue):<br>&lt;ul&gt;
+  &lt;li class=&quot;emtest&quot;&gt;item 1&lt;/li&gt;
+  &lt;li class=&quot;emtest&quot;&gt;item 2
+    &lt;ul&gt;
+      &lt;li class=&quot;emtest&quot;&gt;sub-item 1&lt;/li&gt;
+      &lt;li class=&quot;emtest&quot;&gt;sub-item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;emtest&quot;&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Example using 'rem' units:
+&lt;ul&gt;
+  &lt;li class=&quot;remtest&quot;&gt;item 1&lt;/li&gt;
+  &lt;li class=&quot;remtest&quot;&gt;item 2
+    &lt;ul&gt;
+      &lt;li class=&quot;remtest&quot;&gt;sub-item 1&lt;/li&gt;
+      &lt;li class=&quot;remtest&quot;&gt;sub-item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;remtest&quot;&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre>
+
+    <p>This produces the following output:</p>
+
+    <div class="output">
+      <style>li.emtest {
+        font-size: 0.75em;
+      }</style>
+      <style>li.remtest {
+        font-size: 0.75rem;
+      }</style>
+      Example using 'em' units (compounding issue):
+      <ul>
+        <li class="emtest">item 1</li>
+        <li class="emtest">item 2
+          <ul>
+            <li class="emtest">sub-item 1</li>
+            <li class="emtest">sub-item 2</li>
+          </ul>
+        </li>
+        <li class="emtest">item 3</li>
+      </ul>
+      Example using 'rem' units:
+      <ul>
+        <li class="remtest">item 1</li>
+        <li class="remtest">item 2
+          <ul>
+            <li class="remtest">sub-item 1</li>
+            <li class="remtest">sub-item 2</li>
+          </ul>
+        </li>
+        <li class="remtest">item 3</li>
+      </ul>
+    </div>
+
+    <p>
+      <strong>Note</strong>: The font size of the sub-items in the first example is smaller than the parent level, but the sub-items in the second example fix the "em compounding problem".
+    </p>
+
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.6</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">4.1</td>
+        <td class="bsSupportedAll">11.6</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

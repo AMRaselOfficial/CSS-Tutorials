@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>text-overflow</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>text-overflow</strong> property specifies how to handle the overflowed area of text.</p>
+
+    <p>This property has the following syntax:</p>
+
+    <pre class="common"><strong>text-overflow:</strong> clip|ellipsis|<em>string</em>|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="30%">Value</th>
+        <th align="left">Description</th>
+      </tr>
+      <tr>
+        <td>clip</td>
+        <td>(default) Specifies that the browser should clip the overflowing text content</td>
+      </tr>
+      <tr>
+        <td>ellipsis</td>
+        <td>Specifies that an ellipsis (&quot;...&quot;) should be shown for overflowing text content</td>
+      </tr>
+      <tr>
+        <td><em>string</em></td>
+        <td>Specifies to use the given string to represent the clipped text</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+    <br/>
+
+    <p><b>Note:</b> <em>text-overflow: ellipsis</em> comes into play only when:</p>
+    <ul>
+      <li>the box has <em>overflow</em> other than <strong>visible</strong> (with <em>overflow: visible</em> the text simply flows out of the box)</li>
+      <li>the box has <em>white-space: nowrap</em> or a similar method of constraining the way the text is layed out</li>
+    </ul>
+
+    <h1 class="common">Examples</h1>
+
+    <p>The following example shows the basic use of this property:</p>
+
+        <pre><code>div.test
+{
+  white-space:nowrap;
+  overflow:hidden;
+  width:12em;
+  border:1px solid #000000;
+}
+
+&lt;p&gt;&quot;text-overflow:ellipsis&quot;:&lt;/p&gt;
+&lt;div class=&quot;test&quot;
+  style=&quot;text-overflow:ellipsis;&quot;&gt;
+  This is some long text that will not fit in the box
+&lt;/div&gt;
+
+<br>&lt;p&gt;&quot;text-overflow:clip&quot;:&lt;/p&gt;
+&lt;div class=&quot;test&quot;
+  style=&quot;text-overflow:clip;&quot;&gt;
+  This is some long text that will not fit in the box
+&lt;/div&gt;</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+      <p>"text-overflow:ellipsis":</p>
+
+      <div style="white-space: nowrap; width: 12em; overflow: hidden; border: 1px solid #000000; text-overflow: ellipsis;">Long text that does not fit in the box</div>
+
+      <br/>
+      <br/>
+
+      <p>"text-overflow:clip":</p>
+
+      <div style="white-space: nowrap; width: 12em; overflow: hidden; border: 1px solid #000000; text-overflow: clip;">Long text that does not fit in the box</div>
+    </div>
+
+    <br/>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">7.0</td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">11.0<br/>9.0 -o-</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">clip</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

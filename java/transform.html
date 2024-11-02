@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>transform</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The
+      <strong>transform</strong> property allows modification of the coordinate space of the CSS visual formatting model. By modifying it, elements can be translated, rotated, scaled, and skewed.
+    </p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>transform:</strong>  none |<em>transform-functions</em>|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="30%">Value</th>
+        <th align="left">Description</th>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>Defines that there should be no transformation</td>
+      </tr>
+      <tr>
+        <td>matrix(<i>n,n,n,n,n,n</i>)</td>
+        <td>Defines a 2D transformation, using a matrix of six values</td>
+      </tr>
+      <tr>
+        <td>matrix3d<br>
+          (<i>n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n</i>)
+        </td>
+        <td>Defines a 3D transformation, using a 4x4 matrix of 16 values</td>
+      </tr>
+      <tr>
+        <td>translate(<i>x,y</i>)</td>
+        <td>Defines a 2D translation</td>
+      </tr>
+      <tr>
+        <td>translate3d(<i>x,y,z</i>)</td>
+        <td>Defines a 3D translation</td>
+      </tr>
+      <tr>
+        <td>translateX(<i>x</i>)</td>
+        <td>Defines a translation, using only the value for the X-axis</td>
+      </tr>
+      <tr>
+        <td>translateY(<i>y</i>)</td>
+        <td>Defines a translation, using only the value for the Y-axis</td>
+      </tr>
+      <tr>
+        <td>translateZ(<i>z</i>)</td>
+        <td>Defines a 3D translation, using only the value for the Z-axis</td>
+      </tr>
+      <tr>
+        <td>scale(<i>x,y</i>)</td>
+        <td>Defines a 2D scale transformation</td>
+      </tr>
+      <tr>
+        <td>scale3d(<i>x,y,z</i>)</td>
+        <td>Defines a 3D scale transformation</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>scaleX(<i>x</i>)</td>
+        <td>Defines a scale transformation by giving a value for the X-axis</td>
+      </tr>
+      <tr>
+        <td>scaleY(<i>y</i>)</td>
+        <td>Defines a scale transformation by giving a value for the Y-axis</td>
+      </tr>
+      <tr>
+        <td>scaleZ(<i>z</i>)</td>
+        <td>Defines a 3D scale transformation by giving a value for the Z-axis</td>
+      </tr>
+      <tr>
+        <td>rotate(<i>angle</i>)</td>
+        <td>Defines a 2D rotation, the angle is specified in the parameter</td>
+      </tr>
+      <tr>
+        <td>rotate3d(<i>x,y,z,angle</i>)</td>
+        <td>Defines a 3D rotation</td>
+      </tr>
+      <tr>
+        <td>rotateX(<i>angle</i>)</td>
+        <td>Defines a 3D rotation along the X-axis</td>
+      </tr>
+      <tr>
+        <td>rotateY(<i>angle</i>)</td>
+        <td>Defines a 3D rotation along the Y-axis</td>
+      </tr>
+      <tr>
+        <td>rotateZ(<i>angle</i>)</td>
+        <td>Defines a 3D rotation along the Z-axis</td>
+      </tr>
+      <tr>
+        <td>skew(<i>x-angle,y-angle</i>)</td>
+        <td>Defines a 2D skew transformation along the X- and the Y-axis</td>
+      </tr>
+      <tr>
+        <td>skewX(<i>angle</i>)</td>
+        <td>Defines a 2D skew transformation along the X-axis</td>
+      </tr>
+      <tr>
+        <td>skewY(<i>angle</i>)</td>
+        <td>Defines a 2D skew transformation along the Y-axis</td>
+      </tr>
+      <tr>
+        <td>perspective(<i>n</i>)</td>
+        <td>Defines a perspective view for a 3D transformed element</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Transformation Functions</h1>
+
+    <h2 class="common">matrix</h2>
+
+    <p>Specifies a 2D transformation matrix comprised of the specified six values. This is the equivalent to applying the transformation matrix [a b c d tx ty].</p>
+
+    <pre><code><strong>transform:</strong> matrix(a, c, b, d, tx, ty)</code></pre>
+
+    <h2 class="common">rotate</h2>
+
+    <p>Rotates the element clockwise around its origin (as specified by the transform-origin property) by the specified angle. The operation corresponds to the matrix
+      <strong>[cos(angle) sin(angle) -sin(angle) cos(angle) 0 0]</strong>.</p>
+
+    <pre class="common"><strong>transform:</strong> rotate(angle);</pre>
+
+    <h2 class="common">scale</h2>
+
+    <p>Specifies a 2D scaling operation described by [sx, sy]. If sy isn't specified, it is assumed to be equal to sx.</p>
+
+    <pre class="common"><strong>transform:</strong> scale(sx[,sy]);</pre>
+
+    <h2 class="common">scaleX</h2>
+
+    <p>Specifies a scale operation using the vector <strong>[sx, 1]</strong>.</p>
+
+    <pre class="common"><strong>transform:</strong> scale(sx);</pre>
+
+    <h2 class="common">scaleY</h2>
+
+    <p>Specifies a scale operation using the vector <strong>[1, sy]</strong>.</p>
+
+    <pre class="common"><strong>transform:</strong> scale(sy);</pre>
+
+    <h2 class="common">skew</h2>
+
+    <p>Skews the element around the X and Y axes by the specified angles. If ay isn't provided, no skew is performed on the Y axis.</p>
+
+    <pre class="common"><strong>transform:</strong> skew(ax[,ay]);</pre>
+
+    <h2 class="common">skewX</h2>
+
+    <p>Skews the element around the X axis by the given angle.</p>
+
+    <pre class="common"><strong>transform:</strong> skewX(angle);</pre>
+
+    <h2 class="common">skewY</h2>
+
+    <p>Skews the element around the Y axis by the given angle.</p>
+
+    <pre class="common"><strong>transform:</strong> skewY(angle);</pre>
+
+    <h2 class="common">translate</h2>
+
+    <p>Specifies a 2D translation by the vector [tx, ty]. If ty isn't specified, its value is assumed to be zero.</p>
+
+        <pre><code>transform:
+  translate(tx[,ty]);</code></pre>
+
+    <h2 class="common">translateX</h2>
+
+    <p>Translates the element by the given amount along the X axis.</p>
+
+        <pre><code>transform:
+  translateX(tx);</code></pre>
+
+    <h2 class="common">translateY</h2>
+
+    <p>Translates the element by the given amount along the Y axis.</p>
+
+        <pre><code>transform:
+  translateY(ty);</code></pre>
+
+    <h1 class="common">Examples</h1>
+
+    <p>The following examples demonstrate various transform and transform-origin settings:</p>
+
+    <table class="reference">
+
+      <tr>
+        <th width="80%">Property / Value</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td style="width: 22em"><code class="common">transform: none;</code></td>
+        <td>
+          <div style="background: blue; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: rotate(30deg)</code></td>
+        <td>
+          <div style="background: green; -moz-transform: rotate(30deg); -webkit-transform: rotate(30deg); width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: rotate(30deg);<br/>
+                    transform-origin: 0 0;</code></td>
+        <td>
+          <div style="background: green; -moz-transform: rotate(30deg); -moz-transform-origin: 0 0; -webkit-transform: rotate(30deg); -webkit-transform-origin: 0 0; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: rotate(30deg);<br/>
+                    transform-origin: 100% 100%;</code></td>
+        <td>
+          <div style="background: green; -moz-transform: rotate(30deg); -moz-transform-origin: 100% 100%; -webkit-transform: rotate(30deg); -webkit-transform-origin: 100% 100%; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: rotate(30deg);<br/>
+                    transform-origin: -10em -20em;</code></td>
+        <td>
+          <div style="background: green; -moz-transform: rotate(30deg); -moz-transform-origin: -10em -30em; -webkit-transform: rotate(30deg); -webkit-transform-origin: -10em -20em; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr style="height: 5em">
+        <td><code class="common">transform: scale(1.9)</code></td>
+        <td>
+          <div style="background: red; -moz-transform: scale(1.9); -webkit-transform: scale(1.9); width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr style="height: 5em">
+        <td><code class="common">transform: scale(1.9);<br/>
+                    transform-origin: 0 0;</code></td>
+        <td>
+          <div style="background: red; -moz-transform: scale(1.9); -moz-transform-origin: 0 0; -webkit-transform: scale(1.9); -webkit-transform-origin: 0 0; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr style="height: 5em">
+        <td><code class="common">transform: scale(1.9);<br/>
+                    transform-origin: 100% -30%;</code></td>
+        <td>
+          <div style="background: red; -moz-transform: scale(1.9); -moz-transform-origin: 100% -30%; -webkit-transform: scale(1.9); -webkit-transform-origin: 100% -30%; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: skew(50deg)</code></td>
+        <td>
+          <div style="background: cyan; -moz-transform: skew(50deg); -webkit-transform: skew(50deg); width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: skew(50deg);<br/>
+                    transform-origin: 0 0;</code></td>
+        <td>
+          <div style="background: cyan; -moz-transform: skew(50deg); -moz-transform-origin: 0 0; -webkit-transform: skew(50deg); -webkit-transform-origin: 0 0; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td><code class="common">transform: skew(50deg);<br/>
+                    transform-origin: 100% 100%;</code></td>
+        <td>
+          <div style="background: cyan; -moz-transform: skew(50deg); -moz-transform-origin: 100% 100%; -webkit-transform: skew(50deg); -webkit-transform-origin: 100% 100%; width: 3em; height: 2em">&nbsp;</div>
+        </td>
+      </tr>
+    </table>
+
+    <h1 class="common">Browser Support</h1>
+
+    <h2 class="common">Transform (2D)</h2>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">36.0<br/>4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0<br/>3.5 -moz-</td>
+        <td class="bsSupportedAll">10.0<br/>9.0 -ms-</td>
+        <td class="bsSupportedSome">3.2 -webkit</td>
+        <td class="bsSupportedAll">23.0<br/>15.0 -webkit-<br/>10.5 -o-</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Transform (3D)</h2>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">36.0<br/>12.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0<br/>10.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit</td>
+        <td class="bsSupportedAll">23.0<br/>15.0 -webkit-</td>
+      </tr>
+    </table>
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">Mozilla Specific</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">none</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
