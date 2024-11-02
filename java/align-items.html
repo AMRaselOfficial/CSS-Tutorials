@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>align-items</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>align-items</strong> property specifies the default alignment for items inside the flexible container.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>align-items:</strong> stretch|center|flex-start|flex-end|baseline|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="15%">Value</th>
+        <th align="left" width="85%">Description</th>
+      </tr>
+      <td>stretch</td>
+      <td>(default) Items are stretched to fit the container</td>
+      </tr>
+      <tr>
+        <td>center</td>
+        <td>Items are positioned at the center of the container</td>
+      </tr>
+      <tr>
+        <td>flex-start</td>
+        <td>Items are positioned at the beginning of the container</td>
+      </tr>
+      <tr>
+        <td>flex-end</td>
+        <td>Items are positioned at the end of the container</td>
+      </tr>
+      <tr>
+        <td>baseline</td>
+        <td>Items are positioned at the baseline of the container</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>The following example shows the basic use of this property:</p>
+        <pre><code>div {
+    display: flex;
+    align-items: center;
+}</code></pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">20.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">7.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">stretch</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

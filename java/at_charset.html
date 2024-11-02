@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@charset</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>The <strong>@charset</strong> parser directive is used to specify the character encoding of an external style sheet.</p>
+
+    <p>The character set name must be a valid encoding name from the Internet Assigned Numbers Authority (IANA).</p>
+
+    <p>This directive has the form:</p>
+    <pre><code>@charset "encoding";</code></pre>
+
+
+    <p><b>Note:</b> The <strong>@charset</strong> directive must appear before anything else in the file.</p>
+
+    <p>The following table lists the different character-sets being used around the world:</p>
+
+    <table class="reference">
+      <tr>
+        <th align="left" width="40%">Character Set</th>
+        <th align="left">Description</th>
+      </tr>
+      <tr>
+        <td>ISO-8859-1</td>
+        <td>Latin alphabet part 1: North America, Western Europe, Latin America, the Caribbean, Canada, Africa</td>
+      </tr>
+
+      <tr>
+        <td>ISO-8859-2</td>
+        <td>Latin alphabet part 2: Eastern Europe</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-3</td>
+
+        <td>Latin alphabet part 3: SE Europe, Esperanto, miscellaneous others</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-4</td>
+        <td>Latin alphabet part 4: Scandinavia/Baltics (and others not in ISO-8859-1)</td>
+
+      </tr>
+      <tr>
+        <td>ISO-8859-5</td>
+        <td>Latin/Cyrillic part 5: The languages that are using a Cyrillic alphabet such as Bulgarian, Belarusian, Russian and Macedonian</td>
+      </tr>
+      <tr>
+
+        <td>ISO-8859-6</td>
+        <td>Latin/Arabic part 6: The languages that are using the Arabic alphabet</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-7</td>
+        <td>Latin/Greek part 7: The modern Greek language as well as mathematical symbols derived from the Greek</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-8</td>
+        <td>Latin/Hebrew part 8: The languages that are using the Hebrew alphabet</td>
+      </tr>
+
+      <tr>
+        <td>ISO-8859-9</td>
+        <td>Latin 5 part 9: The Turkish language. Same as ISO-8859-1 except Turkish characters replace Icelandic ones</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-10</td>
+
+        <td>Latin 6 Lappish, Nordic, Eskimo: The Nordic languages</td>
+      </tr>
+      <tr>
+        <td>ISO-8859-15</td>
+        <td>Latin 9 (aka Latin 0): Similar to ISO 8859-1 but replaces some less common symbols with the euro sign and some other missing characters</td>
+
+      </tr>
+      <tr>
+        <td>ISO-2022-JP</td>
+        <td>Latin/Japanese part 1: The Japanese language</td>
+      </tr>
+      <tr>
+
+        <td>ISO-2022-JP-2</td>
+        <td>Latin/Japanese part 2: The Japanese language</td>
+      </tr>
+      <tr>
+        <td>ISO-2022-KR</td>
+        <td>Latin/Korean part 1: The Korean language</td>
+      </tr>
+    </table>
+    <h1 class="common">Examples</h1>
+
+    <p>This example indicates that the style sheet will use ISO-8859-1 character encoding:</p>
+
+    <pre><code>@charset "ISO-8859-1";</code></pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

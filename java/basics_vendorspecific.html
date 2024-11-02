@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor-specific Properties</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Vendor-specific Properties</h1>
+
+    <p>Browser makers sometimes implement extensions to the CSS specification that are usually proprietary to their browser. To accomodate this, the CSS specifications define a specific format that vendors should follow:</p>
+
+    <p><code class="common">-vendor_id-<em>name</em></code></p>
+
+    <p>or</p>
+
+    <p><code class="common">_vendor_id-<em>name</em></code></p>
+
+    <p><em>name</em> is the name of the keyword or property.</p>
+
+    <p>Keywords and property names beginning with - (dash) or _ (underscore) are reserved for vendor-specific extensions.</p>
+
+    <p>The following table shows some known vendor prefixes:</p>
+
+    <table class="reference">
+      <tbody>
+      <tr>
+        <th align="left" width="20%">Prefix</th>
+        <th align="left">Organization</th>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-atsc-</code></td>
+        <td>Advanced Televsion Standards Committee</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-ms-</code></td>
+        <td>Microsoft</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">mso-</code></td>
+        <td>Microsoft Office</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-moz-</code></td>
+        <td>
+          <p>
+            Mozilla Foundation<br/>
+            (Gecko-based browsers)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-o-</code></td>
+        <td>Opera Software</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-wap-</code></td>
+        <td>The WAP Forum</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-webkit-</code></td>
+        <td>Safari<br/>
+          (Webkit-based browsers)
+        </td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><code class="common">-khtml-</code></td>
+        <td>Konqueror Browser</td>
+      </tr>
+      </tbody>
+    </table>
+    <br/>
+
+    <p>
+      <strong>Important:</strong> The use of vendor-specific properties should be limited. Because these properties are not part of the W3C specification, their behaviors could change at any time.
+    </p>
+
+    <p>More information about some of these extensions can be found under the <strong>Extensions</strong> category for the specific vendor.</p>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

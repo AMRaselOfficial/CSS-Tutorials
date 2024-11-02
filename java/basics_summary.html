@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Summary</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS Summary</h1>
+
+    <p>The following tables list the CSS properties and CSS queries along with a summary of the property and which version it appears in:</p>
+
+    <p>The &quot;CSS&quot; column indicates in which CSS version the property is defined (CSS1, CSS2, or CSS3).</p>
+
+    <h2 class="common">Animation Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>@keyframes</td>
+        <td>Specifies the animation</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation</td>
+        <td>A shorthand property for all the animation properties below, except the animation-play-state property</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-duration</td>
+        <td>Specifies how many seconds or milliseconds an animation takes to complete one cycle</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-delay</td>
+        <td>Specifies when the animation will start</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-direction</td>
+        <td>Specifies whether or not the animation should play in reverse on alternate cycles</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-fill-mode</td>
+        <td>Specifies what values are applied by the animation outside the time it is executing</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-iteration-count</td>
+        <td>Specifies the number of times an animation should be played</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-name</td>
+        <td>Specifies a name for the @keyframes animation</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-timing-function</td>
+        <td>Specifies the speed curve of the animation</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>animation-play-state</td>
+        <td>Specifies whether the animation is running or paused</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Background Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>background</td>
+        <td>Sets all the background properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-attachment</td>
+        <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-color</td>
+        <td>Sets the background color of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-image</td>
+        <td>Sets the background image for an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-position</td>
+        <td>Sets the starting position of a background image</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-repeat</td>
+        <td>Sets how a background image will be repeated</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>background-clip</td>
+        <td>Specifies the painting area of the background</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>background-origin</td>
+        <td>Specifies the positioning area of the background images</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>background-size</td>
+        <td>Specifies the size of the background images</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Border and Outline Properties</h2>
+    <table class="reference">
+      <tr>
+        <th width="28%" style="width: 28%;">Property</th>
+        <th width="66%" style="width: 67%;">Description</th>
+        <th width="6%" style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>border</td>
+        <td>Sets all the border properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-bottom</td>
+        <td>Sets all the bottom border properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-bottom-color</td>
+        <td>Sets the color of the bottom border</td>
+        <td>1&nbsp;</td>
+      </tr>
+      <tr>
+        <td>border-bottom-left-radius</td>
+        <td>Defines the shape of the border of the bottom-left corner</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-bottom-right-radius</td>
+        <td>Defines the shape of the border of the bottom-right corner</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-bottom-style</td>
+        <td>Sets the style of the bottom border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-bottom-width</td>
+        <td>Sets the width of the bottom border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-color</td>
+        <td>Sets the color of the four borders</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-image</td>
+        <td>A shorthand property for setting all the border-image-* properties</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-image-outset</td>
+        <td>Specifies the amount by which the border image area extends beyond the border box</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-image-repeat</td>
+        <td>Specifies whether the image-border should be repeated, rounded or stretched</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-image-slice</td>
+        <td>Specifies the inward offsets of the image-border</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-image-source</td>
+        <td>Specifies an image to be used as a border</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-image-width</td>
+        <td>Specifies the widths of the image-border</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-left</td>
+        <td>Sets all the left border properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-left-color</td>
+        <td>Sets the color of the left border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-left-style</td>
+        <td>Sets the style of the left border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-left-width</td>
+        <td>Sets the width of the left border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-radius</td>
+        <td>A shorthand property for setting all the four border-*-radius properties</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-right</td>
+        <td>Sets all the right border properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-right-color</td>
+        <td>Sets the color of the right border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-right-style</td>
+        <td>Sets the style of the right border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-right-width</td>
+        <td>Sets the width of the right border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-style</td>
+        <td>Sets the style of the four borders</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-top</td>
+        <td>Sets all the top border properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-top-color</td>
+        <td>Sets the color of the top border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-top-left-radius</td>
+        <td>Defines the shape of the border of the top-left corner</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-top-right-radius</td>
+        <td>Defines the shape of the border of the top-right corner</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>border-top-style</td>
+        <td>Sets the style of the top border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-top-width</td>
+        <td>Sets the width of the top border</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>border-width</td>
+        <td>Sets the width of the four borders</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>outline</td>
+        <td>Sets all the outline properties in one declaration</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-color</td>
+        <td>Sets the color of an outline</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-style</td>
+        <td>Sets the style of an outline</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-width</td>
+        <td>Sets the width of an outline</td>
+        <td>2</td>
+      </tr>
+      <!--  <tr>
+                    <td>box-decoration-break</td>
+                    <td>&nbsp;</td>
+                    <td>3</td>
+                </tr>-->
+      <tr>
+        <td>box-shadow</td>
+        <td>Attaches one or more drop-shadows to the box</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Box Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>overflow-x</td>
+        <td>Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>overflow-y</td>
+        <td>Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area</td>
+        <td>3</td>
+      </tr>
+      <!--  <tr>
+                    <td>overflow-style</td>
+                    <td>Specifies the preferred scrolling method for elements that overflow</td>
+                    <td>3</td>
+                </tr>
+              <tr>
+                  <td>rotation</td>
+                  <td>Rotates an element around a given point defined by the rotation-point property</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>rotation-point</td>
+                  <td>Defines a point as an offset from the top left border edge</td>
+                  <td>3</td>
+              </tr>-->
+    </table>
+
+    <h2 class="common">Color Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <!--  <tr>
+                    <td>color-profile</td>
+                    <td>Permits the specification of a source color profile other than the default</td>
+                    <td>3</td>
+                </tr>-->
+      <tr>
+        <td>opacity</td>
+        <td>Sets the opacity level for an element</td>
+        <td>3</td>
+      </tr>
+      <!--  <tr>
+                    <td>rendering-intent</td>
+                    <td>Permits the specification of a color profile rendering intent other than the default</td>
+                    <td>3</td>
+                </tr>-->
+    </table>
+
+    <!--<h2 class="common">Content for Paged Media Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>bookmark-label</td>
+                    <td>Specifies the label of the bookmark</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>bookmark-level</td>
+                    <td>Specifies the level of the bookmark</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>bookmark-target</td>
+                    <td>Specifies the target of the bookmark link</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>float-offset</td>
+                    <td>Pushes floated elements in the opposite direction of the where they have been floated with float</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphenate-after</td>
+                    <td>Specifies the minimum number of characters in a hyphenated word after the hyphenation character</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphenate-before</td>
+                    <td>Specifies the minimum number of characters in a hyphenated word before the hyphenation character</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphenate-character</td>
+                    <td>Specifies a string that is shown when a hyphenate-break occurs</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphenate-lines</td>
+                    <td>Indicates the maximum number of successive hyphenated lines in an element</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphenate-resource</td>
+                    <td>Specifies a comma-separated list of external resources that can help the browser determine hyphenation points</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>hyphens</td>
+                    <td>Sets how to split words to improve the layout of paragraphs</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>image-resolution</td>
+                    <td>Specifies the correct resolution of images</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>marks</td>
+                    <td>Adds crop and/or cross marks to the document</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>string-set</td>
+                    <td>&nbsp;</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <h2 class="common">Dimension Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td>Sets the height of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>max-height</td>
+        <td>Sets the maximum height of an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>max-width</td>
+        <td>Sets the maximum width of an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>min-height</td>
+        <td>Sets the minimum height of an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>min-width</td>
+        <td>Sets the minimum width of an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td>Sets the width of an element</td>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Flexible Box Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>box-align</td>
+        <td>Specifies how to align the child elements of a box</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>box-direction</td>
+        <td>Specifies in which direction the children of a box are displayed</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>box-flex</td>
+        <td>Specifies whether the children of a box is flexible or inflexible in size</td>
+        <td>3</td>
+      </tr>
+      <!--  <tr>
+                    <td>box-flex-group</td>
+                    <td>Assigns flexible elements to flex groups</td>
+                    <td>3</td>
+                </tr>
+              <tr>
+                  <td>box-lines</td>
+                  <td>Specifies whether columns will go onto a new line whenever it runs out of space in the parent box</td>
+                  <td>3</td>
+              </tr>-->
+      <tr>
+        <td>box-ordinal-group</td>
+        <td>Specifies the display order of the child elements of a box</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>box-orient</td>
+        <td>Specifies whether the children of a box should be laid out horizontally or vertically</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>box-pack</td>
+        <td>Specifies the horizontal position in horizontal boxes and the vertical position in vertical boxes</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>box-sizing</td>
+        <td>Allows you to define certain elements to fit an area in a certain way</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Font Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>font</td>
+        <td>Sets all the font properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>font-family</td>
+        <td>Specifies the font family for text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>Specifies the font size of text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td>Specifies the font style for text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>font-variant</td>
+        <td>Specifies whether or not a text should be displayed in a small-caps font</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>Specifies the weight of a font</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>@font-face</td>
+        <td>A rule that allows websites to download and use fonts other than the &quot;web-safe&quot; fonts</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>font-size-adjust</td>
+        <td>Preserves the readability of text when font fallback occurs</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>font-stretch</td>
+        <td>Selects a normal, condensed, or expanded face from a font family</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Generated Content Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>content</td>
+        <td>Used with the :before and :after pseudo-elements, to insert generated content</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>counter-increment</td>
+        <td>Increments one or more counters</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>counter-reset</td>
+        <td>Creates or resets one or more counters</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>quotes</td>
+        <td>Sets the type of quotation marks for embedded quotations</td>
+        <td>2</td>
+      </tr>
+      <!--  <tr>
+                    <td>crop</td>
+                    <td>Allows a replaced element to be just a rectangular area of an object, instead of the whole object</td>
+                    <td>3</td>
+                </tr>
+              <tr>
+                  <td>move-to</td>
+                  <td>Causes an element to be removed from the flow and reinserted at a later point in the document</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>page-policy</td>
+                  <td>Determines which page-based occurance of a given element is applied to a counter or string value</td>
+                  <td>3</td>
+              </tr>-->
+    </table>
+
+    <!--<h2 class="common">Grid Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>grid-columns</td>
+                    <td>Specifies the width of each column in a grid</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>grid-rows</td>
+                    <td>Specifies the height of each column in a grid</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <!--<h2 class="common">Hyperlink Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>A shorthand property for setting the target-name, target-new, and target-position properties</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>target-name</td>
+                    <td>Specifies where to open links (target destination)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>target-new</td>
+                    <td>Specifies whether new destination links should open in a new window or in a new tab of an existing window</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>target-position</td>
+                    <td>Specifies where new destination links should be placed</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <!--<h2 class="common">Linebox Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>alignment-adjust</td>
+                    <td>Allows more precise alignment of elements</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>alignment-baseline</td>
+                    <td>Specifies how an inline-level element is aligned with respect to its parent</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>baseline-shift</td>
+                    <td>Allows repositioning of the dominant-baseline relative to the dominant-baseline</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>dominant-baseline</td>
+                    <td>Specifies a scaled-baseline-table</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-after-adjust</td>
+                    <td>Sets the alignment point of the drop initial for the primary connection point</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-after-align</td>
+                    <td>Sets which alignment line within the initial line box is used at the primary connection point with the initial letter box</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-before-adjust</td>
+                    <td>Sets the alignment point of the drop initial for the secondary connection point</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-before-align</td>
+                    <td>Sets which alignment line within the initial line box is used at the secondary connection point with the initial letter box</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-size</td>
+                    <td>Controls the partial sinking of the initial letter</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>drop-initial-value</td>
+                    <td>Activates a drop-initial effect</td>
+                    <td>3&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>inline-box-align</td>
+                    <td>Sets which line of a multi-line inline block align with the previous and next inline elements within a line</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>line-stacking</td>
+                    <td>A shorthand property for setting the line-stacking-strategy, line-stacking-ruby, and line-stacking-shift properties</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>line-stacking-ruby</td>
+                    <td>Sets the line stacking method for block elements containing ruby annotation elements</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>line-stacking-shift</td>
+                    <td>Sets the line stacking method for block elements containing elements with base-shift</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>line-stacking-strategy</td>
+                    <td>Sets the line stacking strategy for stacked line boxes within a containing block element</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>text-height</td>
+                    <td>Sets the block-progression dimension of the text content area of an inline box</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <h2 class="common">List Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>list-style</td>
+        <td>Sets all the properties for a list in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>list-style-image</td>
+        <td>Specifies an image as the list-item marker</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>list-style-position</td>
+        <td>Specifies if the list-item markers should appear inside or outside the content flow</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>list-style-type</td>
+        <td>Specifies the type of list-item marker</td>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Margin Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>margin</td>
+        <td>Sets all the margin properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>margin-bottom</td>
+        <td>Sets the bottom margin of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>margin-left</td>
+        <td>Sets the left margin of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>margin-right</td>
+        <td>Sets the right margin of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>margin-top</td>
+        <td>Sets the top margin of an element</td>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <!--<h2 class="common">Marquee Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>marquee-direction</td>
+                    <td>Sets the direction of the moving content</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>marquee-play-count</td>
+                    <td>Sets how many times the content move</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>marquee-speed</td>
+                    <td>Sets how fast the content scrolls</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>marquee-style</td>
+                    <td>Sets the style of the moving content</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <!--<h2 class="common">Multi-column Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>column-count</td>
+                    <td>Specifies the number of columns an element should be divided into</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-fill</td>
+                    <td>Specifies how to fill columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-gap</td>
+                    <td>Specifies the gap between the columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-rule</td>
+                    <td>A shorthand property for setting all the column-rule-* properties</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-rule-color</td>
+                    <td>Specifies the color of the rule between columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-rule-style</td>
+                    <td>Specifies the style of the rule between columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-rule-width</td>
+                    <td>Specifies the width of the rule between columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-span</td>
+                    <td>Specifies how many columns an element should span across</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>column-width</td>
+                    <td>Specifies the width of the columns</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>columns</td>
+                    <td>A shorthand property for setting column-width and column-count</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <h2 class="common">Padding Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>padding</td>
+        <td>Sets all the padding properties in one declaration</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>padding-bottom</td>
+        <td>Sets the bottom padding of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>padding-left</td>
+        <td>Sets the left padding of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>padding-right</td>
+        <td>Sets the right padding of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>padding-top</td>
+        <td>Sets the top padding of an element</td>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <!--<h2 class="common">Paged Media Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>fit</td>
+                    <td>Gives a hint for how to scale a replaced element if neither its width nor its height property is auto</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>fit-position</td>
+                    <td>Determines the alignment of the object inside the box</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>image-orientation</td>
+                    <td>Specifies a rotation in the right or clockwise direction that a user agent applies to an image</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>page</td>
+                    <td>Specifies a particular type of page where an element SHOULD be displayed</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Specifies the size and orientation of the containing box for page content</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <h2 class="common">Positioning Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>bottom</td>
+        <td>Specifies the bottom position of a positioned element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>clear</td>
+        <td>Specifies which sides of an element where other floating elements are not allowed</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>clip</td>
+        <td>Clips an absolutely positioned element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>cursor</td>
+        <td>Specifies the type of cursor to be displayed</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>display</td>
+        <td>Specifies how a certain HTML element should be displayed</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>float</td>
+        <td>Specifies whether or not a box should float</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>left</td>
+        <td>Specifies the left position of a positioned element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>overflow<br>
+        </td>
+        <td>Specifies what happens if content overflows an element's
+          box
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>position</td>
+        <td>Specifies the type of positioning method used for an element (static,
+          relative, absolute or fixed)
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>right</td>
+        <td>Specifies the right position of a positioned element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td>Specifies the top position of a positioned element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>visibility</td>
+        <td>Specifies whether or not an element is visible</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>z-index</td>
+        <td>Sets the stack order of a positioned element</td>
+        <td>2</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Print Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>orphans</td>
+        <td>Sets the minimum number of lines that must be left at the bottom of a page when a page break occurs inside an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>page-break-after</td>
+        <td>Sets the page-breaking behavior after an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>page-break-before</td>
+        <td>Sets the page-breaking behavior before an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>page-break-inside</td>
+        <td>Sets the page-breaking behavior inside an element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>widows</td>
+        <td>Sets the minimum number of lines that must be left at the top of a page when a page break occurs inside an element</td>
+        <td>2</td>
+      </tr>
+    </table>
+
+    <!--<h2 class="common">Ruby Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>ruby-align</td>
+                    <td>Controls the text alignment of the ruby text and ruby base contents relative to each other</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ruby-overhang</td>
+                    <td>Determines whether, and on which side, ruby text is allowed to partially overhang any adjacent text in addition to its own base, when the ruby text is wider than the ruby base</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ruby-position</td>
+                    <td>Controls the position of the ruby text with respect to its base</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ruby-span</td>
+                    <td>Controls the spanning behavior of annotation elements</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <!--<h2 class="common">Speech Properties</h2>
+            <table class="reference">
+                <tr>
+                    <th style="width:28%;">Property</th>
+                    <th style="width:67%;">Description</th>
+                    <th style="width:5%;">CSS</th>
+                </tr>
+                <tr>
+                    <td>mark</td>
+                    <td>A shorthand property for setting the mark-before and mark-after properties</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>mark-after</td>
+                    <td>Allows named markers to be attached to the audio stream</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>mark-before</td>
+                    <td>Allows named markers to be attached to the audio stream</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>phonemes</td>
+                    <td>Specifies a phonetic pronunciation for the text contained by the corresponding element</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>rest</td>
+                    <td>A shorthand property for setting the rest-before and rest-after properties </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>rest-after</td>
+                    <td>Specifies a rest or prosodic boundary to be observed after speaking an element's content</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>rest-before</td>
+                    <td>Specifies a rest or prosodic boundary to be observed before speaking an element's content</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-balance</td>
+                    <td>Specifies the balance between left and right channels</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-duration</td>
+                    <td>Specifies how long it should take to render the selected element's content</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-pitch</td>
+                    <td>Specifies the average pitch (a frequency) of the speaking voice</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-pitch-range</td>
+                    <td>Specifies variation in average pitch</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-rate</td>
+                    <td>Controls the speaking rate</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-stress</td>
+                    <td>Indicates the strength of emphasis to be applied</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>voice-volume</td>
+                    <td>Refers to the amplitude of the waveform output by the speech synthesises</td>
+                    <td>3</td>
+                </tr>
+            </table>-->
+
+    <h2 class="common">Table Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>border-collapse</td>
+        <td>Specifies whether or not table borders should be collapsed</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>border-spacing</td>
+        <td>Specifies the distance between the borders of adjacent cells</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>caption-side</td>
+        <td>Specifies the placement of a table caption</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>empty-cells</td>
+        <td>Specifies whether or not to display borders and background on empty cells in a table</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>table-layout</td>
+        <td>Sets the layout algorithm to be used for a table</td>
+        <td>2</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Text Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>Sets the color of text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>direction</td>
+        <td>Specifies the text direction/writing direction</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>letter-spacing</td>
+        <td>Increases or decreases the space between characters in a text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>line-height</td>
+        <td>Sets the line height</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td>Specifies the horizontal alignment of text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>text-decoration</td>
+        <td>Specifies the decoration added to text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>text-indent</td>
+        <td>Specifies the indentation of the first line in a text-block</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>text-transform</td>
+        <td>Controls the capitalization of text</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>unicode-bidi</td>
+        <td>&nbsp;</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>vertical-align</td>
+        <td>Sets the vertical alignment of an element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>white-space</td>
+        <td>Specifies how white-space inside an element is handled</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>word-spacing</td>
+        <td>Increases or decreases the space between words in a text</td>
+        <td>1</td>
+      </tr>
+      <!--  <tr>
+                    <td>hanging-punctuation</td>
+                    <td>Specifies whether a punctuation character may be placed outside the line box</td>
+                    <td>3</td>
+                </tr>-->
+      <!--  <tr>
+                    <td>punctuation-trim</td>
+                    <td>Specifies whether a punctuation character should be trimmed </td>
+                    <td>3</td>
+                </tr>-->
+      <!--  <tr>
+                    <td>text-align-last</td>
+                    <td>Describes how the last line of a block or a line right before a forced line break is aligned when text-align is &quot;justify&quot;</td>
+                    <td>3</td>
+                </tr>-->
+      <!--  <tr>
+                    <td>text-justify</td>
+                    <td>Specifies the justification method used when text-align is
+                        &quot;justify&quot;</td>
+                    <td>3</td>
+                </tr>-->
+      <!--  <tr>
+                    <td>text-outline</td>
+                    <td>Specifies a text outline</td>
+                    <td>3</td>
+                </tr>-->
+      <tr>
+        <td>text-overflow</td>
+        <td>Specifies what should happen when text overflows the containing element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>text-shadow</td>
+        <td>Adds shadow to text</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>text-wrap</td>
+        <td>Specifies line breaking rules for text</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>word-break</td>
+        <td>Specifies line breaking rules for non-CJK scripts</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>word-wrap</td>
+        <td>Allows long, unbreakable words to be broken and wrap to the next line</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">2D/3D Transform Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>transform</td>
+        <td>Applies a 2D or 3D transformation to an element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transform-origin</td>
+        <td>Allows you to change the position on transformed elements</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transform-style</td>
+        <td>Specifies how nested elements are rendered in 3D space</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>perspective</td>
+        <td>Specifies the perspective on how 3D elements are viewed</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>perspective-origin</td>
+        <td>Specifies the bottom position of 3D elements</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>backface-visibility</td>
+        <td>Defines whether or not an element should be visible when not facing the screen</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">Transition Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>transition</td>
+        <td>A shorthand property for setting the four transition properties</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transition-property</td>
+        <td>Specifies the name of the CSS property the transition effect is for</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transition-duration</td>
+        <td>Specifies how many seconds or milliseconds a transition effect takes to
+          complete
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transition-timing-function</td>
+        <td>Specifies the speed curve of the transition effect</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>transition-delay</td>
+        <td>Specifies when the transition effect will start</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h2 class="common">User-interface Properties</h2>
+    <table class="reference">
+      <tr>
+        <th style="width: 28%;">Property</th>
+        <th style="width: 67%;">Description</th>
+        <th style="width: 5%;">CSS</th>
+      </tr>
+      <tr>
+        <td>box-sizing</td>
+        <td>Tells the browser what the sizing properties (width and height) should
+          include
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>content</td>
+        <td>Used with the :before and :after pseudo-elements, to insert generated content</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>cursor</td>
+        <td>Specifies the type of cursor to be displayed</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>icon</td>
+        <td>Provides the author the ability to style an element with an iconic equivalent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>ime-mode</td>
+        <td>Controls the state of the input method editor for text fields</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>nav-down</td>
+        <td>Specifies where to navigate when using the arrow-down navigation key</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>nav-index</td>
+        <td>Specifies the tabbing order for an element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>nav-left</td>
+        <td>Specifies where to navigate when using the arrow-left navigation key</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>nav-right</td>
+        <td>Specifies where to navigate when using the arrow-right navigation key</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>nav-up</td>
+        <td>Specifies where to navigate when using the arrow-up navigation key</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>outline</td>
+        <td>Sets all the outline properties in one declaration</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-color</td>
+        <td>Sets the color of an outline</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-offset</td>
+        <td>Offsets an outline, and draws it beyond the border edge</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>outline-style</td>
+        <td>Sets the style of an outline</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>outline-width</td>
+        <td>Sets the width of an outline</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>resize</td>
+        <td>Specifies whether or not an element is resizable by the user</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>text-overflow</td>
+        <td>Specifies what should happen when text overflows the containing element</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <br>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

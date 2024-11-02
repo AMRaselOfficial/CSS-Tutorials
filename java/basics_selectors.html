@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS Selectors</h1>
+
+    <p>A selector is a pattern that matches a set of elements in an HTML or XML document. The rules that appear in the block that belongs to the selector are applied to all elements that match this pattern (unless overridden by another rule in the cascade).</p>
+
+    <p>The following table summarizes the Selector syntax:</p>
+
+    <table class="reference">
+      <tbody>
+      <tr>
+        <th style="text-align:left;width:22%">Selector</th>
+        <th style="text-align:left;width:17%">Example</th>
+        <th style="text-align:left;width:56%">Example Description</th>
+        <th style="text-align:left">CSS</th>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">.<em>class</em></td>
+        <td>.intro</td>
+        <td>Selects all elements with class="intro"</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">#<em>id</em></td>
+        <td>#firstname</td>
+        <td>Selects the element with id="firstname"</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">*</td>
+        <td class="code">*</td>
+        <td>Selects all elements</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element</em></td>
+        <td>p</td>
+        <td>Selects all &lt;p&gt; elements</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element,element</em></td>
+        <td>div,p</td>
+        <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element</em> <em>element</em></td>
+        <td>div p</td>
+        <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element</em>&gt;<em>element</em></td>
+        <td>div&gt;p</td>
+        <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element</em>+<em>element</em></td>
+        <td>div+p</td>
+        <td>Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>]</td>
+        <td>[target]</td>
+        <td>Selects all elements with a target attribute</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>=<em>value</em>]</td>
+        <td>[target=_blank]</td>
+        <td>Selects all elements with target="_blank"</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>~=<em>value</em>]</td>
+        <td>[title~=flower]</td>
+        <td>Selects all elements with a title attribute containing the word "flower"</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>|=<em>value</em>]</td>
+        <td>[lang|=en]</td>
+        <td>Selects all elements with a lang attribute value starting with "en"</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:link</td>
+        <td>a:link</td>
+        <td>Selects all unvisited links</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:visited</td>
+        <td>a:visited</td>
+        <td>Selects all visited links</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:active</td>
+        <td>a:active</td>
+        <td>Selects the active link</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:hover</td>
+        <td>a:hover</td>
+        <td>Selects links on mouse over</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:focus</td>
+        <td>input:focus</td>
+        <td>Selects the input element which has focus</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:first-letter</td>
+        <td>p:first-letter</td>
+        <td>Selects the first letter of every &lt;p&gt; element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:first-line</td>
+        <td>p:first-line</td>
+        <td>Selects the first line of every &lt;p&gt; element</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:first-child</td>
+        <td>p:first-child</td>
+        <td>Selects every &lt;p&gt; element that is the first child of its parent</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:before</td>
+        <td>p:before</td>
+        <td>Insert content before&nbsp; the content of every &lt;p&gt; element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:after</td>
+        <td>p:after</td>
+        <td>Insert content after every &lt;p&gt; element</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:lang(<em>language</em>)</td>
+        <td>p:lang(it)</td>
+        <td>Selects every &lt;p&gt; element with a lang attribute equal to "it"
+          (Italian)
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;"><em>element1</em>~<em>element2</em></td>
+        <td>p~ul</td>
+        <td>Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>^=<em>value</em>]</td>
+        <td>a[src^="https"]</td>
+        <td>Selects every &lt;a&gt; element whose src attribute value begins with "https"</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>$=<em>value</em>]</td>
+        <td>a[src$=".pdf"]</td>
+        <td>Selects every &lt;a&gt; element whose src attribute value ends with ".pdf"</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">[<em>attribute</em>*=<em>value</em>]</td>
+        <td>a[src*="maui"]</td>
+        <td>Selects every &lt;a&gt; element whose src attribute value contains the substring
+          "maui"
+        </td>
+        <td style="word-wrap:break-word;word-break:break-all;">3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:first-of-type</td>
+        <td>p:first-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:last-of-type</td>
+        <td>p:last-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:only-of-type</td>
+        <td>p:only-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its
+          parent
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:only-child</td>
+        <td>p:only-child</td>
+        <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:nth-child(<em>n</em>)</td>
+        <td>p:nth-child(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:nth-last-child(<em>n</em>)</td>
+        <td>p:nth-last-child(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second child of its parent, counting
+          from the last child
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:nth-of-type(<em>n</em>)</td>
+        <td>p:nth-of-type(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:nth-last-of-type(<em>n</em>)</td>
+        <td>p:nth-last-of-type(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:last-child</td>
+        <td>p:last-child</td>
+        <td>Selects every &lt;p&gt; element that is the last child of its parent</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:root</td>
+        <td>:root</td>
+        <td>Selects the document’s root element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:empty</td>
+        <td>p:empty</td>
+        <td>Selects every &lt;p&gt; element that has no children (including text nodes)</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:target</td>
+        <td>#news:target</td>
+        <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:enabled</td>
+        <td>input:enabled</td>
+        <td>Selects every enabled &lt;input&gt; element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:disabled</td>
+        <td>input:disabled</td>
+        <td>Selects every disabled &lt;input&gt; element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:checked</td>
+        <td>input:checked</td>
+        <td>Selects every checked &lt;input&gt; element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">:not(<em>selector</em>)</td>
+        <td>:not(p)</td>
+        <td>Selects every element that is not a &lt;p&gt; element</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td style="word-wrap:break-word;word-break:break-all;">::selection</td>
+        <td>::selection</td>
+        <td>Selects the portion of an element that is selected by a user</td>
+        <td>3</td>
+      </tr>
+      </tbody>
+    </table>
+    <p><strong>Note:</strong> The CSS column indicates in which CSS version the property is defined (CSS1, CSS2, or CSS3).</p>
+
+    <h1 class="common">Grouping Selectors</h1>
+
+    <p>Often times in style sheets there are multiple selectors with the same style - as in the example below:</p>
+
+        <pre><code>h1
+{
+  color:blue;
+}
+
+p
+{
+  color:blue;
+}</code></pre>
+    <br/>
+
+    <p>To minimize the code, selectors can be grouped by specifying each separated by a comma - as in the grouped example below:</p>
+
+        <pre><code>h1, p
+{
+  color:blue;
+}</code></pre>
+    <br/>
+
+
+    <h1 class="common">Nesting Selectors</h1>
+
+    <p>Selectors can also be nested, meaning that a style can be applied for a selector within a selector.</p>
+
+    <p>
+      The following example shows:<br/>
+      - one style applied to all p elements,<br/>
+      - one style that applies to all classes marked "highlighted", and
+      <br/>
+      - one style that applies to all p elements within a class marked "highlighted":
+    </p>
+
+        <pre><code>p
+{
+  color:blue;
+}
+
+.highlighted
+{
+  background-color: yellow;
+}
+
+.highlighted p
+{
+  color:red;
+}</code></pre>
+    <br/>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

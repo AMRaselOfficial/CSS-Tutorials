@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Application</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS Application</h1>
+
+    <p>There are three basic ways to apply CSS styles to an HTML document. They are:</p>
+    <ul>
+      <li class="common">Inline</li>
+      <li class="common">Internal</li>
+      <li class="common">External</li>
+    </ul>
+
+    <h1 class="common">Inline</h1>
+
+    <p>Inline styles are applied directly to the HTML by using the <code class="common">style</code> attribute.</p>
+
+    <p>The following style sets the text color of the text in this paragraph to 'blue'.</p>
+
+    <pre><code>&lt;p style="color:blue;">text&lt;/p&gt;</code></pre>
+
+    <p>Use Inline styles sparingly and only when a single element has a unique style to be applied.</p>
+
+    <h1 class="common">Internal</h1>
+
+    <p>Internal styles are specified within the
+      <code class="common">&lt;head&gt;&lt;/head&gt;</code> tags of an HTML document and apply to the whole document. The following example would set the text color to blue for all paragraphs in the document.
+    </p>
+
+        <pre><code>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;CSS Inline Example&lt;/title&gt;
+  &lt;style type="text/css"&gt;
+    p {
+      color:blue;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+    <br/>
+
+    <p>Use Internal styles when a single page has a unique style to be applied.</p>
+
+    <h1 class="common">External</h1>
+
+    <p>External styles are specified in a separate CSS file and 'included' into HTML documents in which they are to apply.</p>
+
+    <p>The following code shows the contents of an example style sheet, <em>styles.css</em>:</p>
+
+        <pre><code>p {
+  color:blue;
+}</code></pre>
+    <br/>
+
+    <p>The following HTML code shows how to include the external style sheet named
+      <em>styles.css</em> into an HTML document. Notice that the &lt;link&gt; tag is specified within the <code class="common">&lt;head&gt;&lt;/head&gt;</code> tags.</p>
+
+        <pre><code>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;CSS External Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;/&gt;
+&lt;/head&gt;</code></pre>
+    <br/>
+
+    <p>External style sheets are recommended when the styles are to be applied across multiple HTML documents. This allows for consistency throughout an entire web site and any style changes automatically apply to all files that include the style sheet.</p>
+
+    <h1 class="common">CSS Cascading Order</h1>
+
+    <p>When multiple styles are specified by any of these methods, the styles 'cascade' into a single style by following this list in order of increasing priority:</p>
+    <ol>
+      <li class="common">Browser default</li>
+      <li class="common">External style sheet</li>
+      <li class="common">Internal styles</li>
+      <li class="common">Inline style</li>
+    </ol>
+
+    <p>Therefore, an Inline style has the highest priority, meaning it will override the same Internal style, or in an External style sheet, or in a browser (a default value).</p>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS Box Model</h1>
+
+    <p>To understand layout and positioning in CSS, it helps to understand the box model. When displaying an HTML element, the content of that element is considered to be a rectangular box which has a content area surrounded by padding, a border, and margins.</p>
+
+    <p>The diagram below shows these various box model parts:</p>
+
+    <image src="css-box-model.svg" style="max-width: 650px; padding: 12px 0;" onerror="this.onerror=null; this.src='css-box-model-2.0x.png'" width="100%" />
+    <br/>
+
+    <p><strong>Margin</strong> - Area around the border. The margin is always transparent</p>
+
+    <p><strong>Border</strong> - The border is an area that lies around the padding and content. The border can be styled in various widths and colors</p>
+
+    <p><strong>Padding</strong> - The padding is the space around the content area. This area is affected by the background color of the content</p>
+
+    <p><strong>Content</strong> - Contains the content of the box (where text and images are placed)</p>
+
+    <!-- DATA END -->
+
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

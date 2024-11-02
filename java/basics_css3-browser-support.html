@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS3 Browser Support</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS3 Browser Support</h1>
+
+    <p>The following table lists the new CSS properties and which browsers support them:</p>
+
+    <table class="reference bsReferenceSmall">
+      <tr>
+        <th>Property</th>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>IE</th>
+        <th>Safari</th>
+        <th>Opera</th>
+      </tr>
+      <tr>
+        <td class="bsProperty">align-content</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">7.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">align-items</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">7.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">align-self</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">7.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">@keyframes</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-name</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-duration</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-timing-function</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-delay</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-iteration-count</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-direction</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">animation-play-state</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">backface-visibility</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedSome">10 -ms-</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">background-clip</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">background-origin</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">background-size</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">4.1</td>
+        <td class="bsSupportedAll">10.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-bottom-left-radius</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty" style="height: 22px">border-bottom-right-radius</td>
+        <td class="bsIE" style="height: 22px">9.0</td>
+        <td class="bsFirefox" style="height: 22px">4.0</td>
+        <td class="bsChrome" style="height: 22px">5.0</td>
+        <td class="bsSafari" style="height: 22px">5.0</td>
+        <td class="bsOpera" style="height: 22px">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">11</td>
+        <td class="bsSupportedAll">6</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image-outset</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">11</td>
+        <td class="bsSupportedAll">6</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image-repeat</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">11</td>
+        <td class="bsSupportedAll">6</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image-slice</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image-source</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-image-width</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">13.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-radius</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-top-left-radius</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">border-top-right-radius</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">box-decoration-break</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">box-shadow</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.1</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">box-sizing</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">8.0</td>
+        <td class="bsSupportedAll">5.1</td>
+        <td class="bsSupportedAll">9.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">break-after</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">break-before</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">break-inside</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-count</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-fill</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome">13.0 -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-gap</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-rule</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-rule-color</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-rule-style</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-rule-width</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedSome">15.0 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-span</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedSome">15.0 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">column-width</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">2.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3 -webkit-</td>
+        <td class="bsSupportedSome">15.0 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">columns</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedSome">9.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.0 -webkit-</td>
+        <td class="bsSupportedSome">15.0 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">fit</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-basis</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-direction</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-flow</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-grow</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-shrink</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">flex-wrap</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">@font-face</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.6</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">10.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">@font-feature-values</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-feature-settings</td>
+        <td class="bsSupportedSome">16.0 -webkit-</td>
+        <td class="bsSupportedAll">34.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome">25.0 -o-</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-kerning</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-language-override</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-size-adjust</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-stretch</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-synthesis</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-alternates</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-caps</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-east-asian</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-ligatures</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-numeric</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">font-variant-position</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">hanging-punctuation</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">hyphens</td>
+        <td class="bsSupportedSome">13.0 -webkit-</td>
+        <td class="bsSupportedSome">6.0 -moz-</td>
+        <td class="bsSupportedSome">10.0 -ms-</td>
+        <td class="bsSupportedSome">5.1 -webkit-</td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">icon</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">image-orientation</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">image-rendering</td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedSome"> -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.6</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">image-resolution</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">justify-content</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">line-break</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">mark</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">mark-after</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">mark-before</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">marks</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">marquee-direction</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">marquee-play-count</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">marquee-speed</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">marquee-style</td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome"> -webkit-</td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">nav-down</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">nav-index</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">nav-left</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">nav-right</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">nav-up</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">11.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">object-fit</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">object-position</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">opacity</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">2.0</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">9.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">order</td>
+        <td class="bsSupportedAll">29.0</td>
+        <td class="bsSupportedAll">28.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">6.1 -webkit-</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">outline-offset</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.5</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">overflow-wrap</td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll">3.5</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">9.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">overflow-x</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.5</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">9.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">overflow-y</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">9.5</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">@page</td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll">19.0</td>
+        <td class="bsSupportedAll">8.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">6.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">perspective</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">23.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">perspective-origin</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">23.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">resize</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">rest</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">rest-after</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">rest-before</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">ruby-align</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">tab-size</td>
+        <td class="bsSupportedAll">21.0</td>
+        <td class="bsSupportedSome">4.0 -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-align-last</td>
+        <td class="bsSupportedAll">35.0</td>
+        <td class="bsSupportedSome">12.0 -moz-</td>
+        <td class="bsSupportedAll">5.5</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-combine-upright</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-decoration-color</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome">6.0 -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-decoration-line</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome">6.0 -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-decoration-style</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedSome">6.0 -moz-</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-justify</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">5.5</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-orientation</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-overflow</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">7.0</td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">11.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-shadow</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.5</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">9.6</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">text-underline-position</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transform</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.2 -webkit-</td>
+        <td class="bsSupportedAll">23.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transform-origin</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">3.2 -webkit-</td>
+        <td class="bsSupportedAll">23.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transform-style</td>
+        <td class="bsSupportedAll">36.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">11.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">23.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transition</td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transition-delay</td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transition-duration</td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transition-property</td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">transition-timing-function</td>
+        <td class="bsSupportedAll">26.0</td>
+        <td class="bsSupportedAll">16.0</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedAll">6.1</td>
+        <td class="bsSupportedAll">12.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">word-break</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">15.0</td>
+        <td class="bsSupportedAll">5.5</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">15.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty">word-wrap</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.5</td>
+        <td class="bsSupportedAll">5.5</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">10.5</td>
+      </tr>
+    </table>
+    <br/>
+
+    <p>
+      <strong>Note:</strong> The warning sign means that the property is partially supported or supported using a vendor-specific extension:<br>
+      For Internet explorer, the prefix is <code class="common">-ms-</code><br>
+      For Firefox, the prefix is <code class="common">-moz-</code><br>
+      For Chrome, the prefix is <code class="common">-webkit-</code><br>
+      For Safari, the prefix is <code class="common">-webkit-</code><br>
+      For Opera, the prefix is <code class="common">-o-</code>
+    </p>
+
+    <p><strong>Note:</strong> A number in the column indicates the browser version in which the property was first supported.</p>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

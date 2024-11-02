@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@import</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>The <strong>@import</strong> parser directive is used to import one style sheet into another.</p>
+
+    <p>This directive has the form:</p>
+        <pre><code>@import { <em>URI</em> | <em>string</em> }
+  [<em>media type,...</em>];</code></pre>
+
+
+    <p>
+      Note that one or more optional media types may be specified indicating to which media types the imported style sheet applies. This is done by appending a comma-separated list of media types to the URI. The following example illustrates the syntax:
+
+            <pre><code>@import
+  url(/css/screen-styles.css)
+  screen, projection;</code></pre>
+
+
+    <p><b>Note:</b> The <strong>@import</strong> directive must appear before all rule sets otherwise it will be ignored.</p>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example imports a print and screen rule set into this style sheet:</p>
+
+        <pre><code>@import url(&quot;/css/print.css");
+@import &quot;screen.css&quot;;</code></pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"><sup>1</sup></td>
+        <td class="bsSupportedAll"></td>
+        <td class="bsSupportedAll"></td>
+      </tr>
+    </table>
+    <p class="supportfooter"><sup>1</sup> - media types not supported by IE</p>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS1</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>counter-reset</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>counter-reset</strong> property creates or resets one or more counters. It is typically used with the <code class="common">content</code> and <code class="common">counter-increment</code> properties.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>counter-reset:</strong> none|<em>name number</em>|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="20%">Value</th>
+        <th align="left" width="80%">Description</th>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>(default) No counters will be reset</td>
+      </tr>
+      <tr>
+        <td><em>name</em></td>
+        <td>The <em>name</em> defines which counter should be reset
+        </td>
+      </tr>
+      <tr>
+        <td><em>number</em></td>
+        <td>The <em>number</em> sets the value the counter is set to on each occurrence of the selector. The default reset value is 0
+        </td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example prepends a number to all h2 headings, incrementing the value for each.</p>
+
+        <pre><code>h1 {
+  counter-reset:section;
+}
+
+h2:before {
+  counter-increment:section;
+  content:counter(section) ". ";
+}</code></pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">2.0</td>
+        <td class="bsSupportedAll">8.0</td>
+        <td class="bsSupportedAll">3.1</td>
+        <td class="bsSupportedAll">9.6</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

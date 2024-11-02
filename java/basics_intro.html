@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Introduction</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="main">
+
+          <!-- DATA BEGIN -->
+
+          <h1 class="common">CSS Introduction</h1>
+
+          <p>CSS, or Cascading Styles Sheets, define how to display HTML. Whereas the HTML defines the content of a document, the style sheet defines the presentation of that content. CSS was added to HTML 4.0 and provided a way to separate the content from the presentation.</p>
+
+          <h1 class="common">CSS Syntax</h1>
+
+          <p>Rules in CSS are made up of two parts, a selector, and one or more declarations. The following diagram illustrates this syntax:</p>
+
+          <image src="css-syntax.svg" style="max-width: 550px; padding: 12px; border: solid 1px lightgray;" onerror="this.onerror=null; this.src='css-syntax-2.0x.png'" width="90%" />
+          <br/>
+          <br/>
+
+          <p>The <strong>selector</strong> is the HTML element to be styled.</p>
+
+          <p>Each <strong>declaration</strong> is made up of a <strong>property</strong> and a <strong>value</strong>. The
+            <strong>property</strong> is the style attribute to be changed. The
+            <strong>value</strong> is what the attribute will be set to. A colon (:) is used to separate the property and its value.</p>
+
+          <p>As illustrated in the diagram, <strong>declarations</strong> end with the semi-colon (;) and are surrounded by curly brackets ({ and }).</p>
+
+          <h1 class="common">CSS Selectors</h1>
+
+          <p>Styles can be applied to specific HTML elements by specifying the HTML element, then enclosing the styles within curly brackets. The following example shows a style being applied to the
+            <code>p</code> element.</p>
+
+          <pre><code>p { color:blue; }</code></pre>
+
+          <p>In this case, all paragraph elements in the document would have a text color of blue.</p>
+
+          <p>There are many different types of selectors that allow great flexibility in applying styles to elements.</p>
+
+          <h1 class="common">CSS Class &amp; ID Selectors</h1>
+
+          <p>In addition to using the HTML element selectors, custom selectors can also be defined in the form of Class and ID selectors. This allows having the same HTML element, but styled differently depending on its class or ID. An ID selector can be used to identify one element, whereas a class selector can be used to identify more than one element.</p>
+
+          <p>In CSS, a class selector is a name preceded by a period (.) and an ID selector is a name preceded by a pound sign (#).</p>
+
+          <p>The following CSS code shows a class selector and an ID selector:</p>
+        <pre><code>.highlight {
+  color:blue;
+  font-weight:bold;
+}
+
+#codebox {
+  background-color:#dddddd;
+  padding:10px;
+  border-style: solid;
+  border-width:1px;
+}</code></pre>
+          <br/>
+
+          <p>The following example uses these styles in HTML code:</p>
+
+        <pre><code>&lt;div id=&quot;codebox&quot;&gt;
+
+&lt;p&gt;
+  'normal' text here
+&lt;/p&gt;
+
+&lt;p class=&quot;highlight&quot;&gt;
+  'highlight' text here
+&lt;/p&gt;
+
+&lt;/div&gt;</code></pre>
+
+          <h1 class="common">CSS Comments</h1>
+
+          <p>In CSS, a comment starts with /* and ends with */. Comments can span multiple lines, but may not be nested.</p>
+
+          <p>The following example shows a single-line and a multi-line comment.</p>
+
+        <pre><code>/* A single-line comment */
+
+/* A comment that
+   spans multiple lines */</code></pre>
+
+
+          <!-- DATA END -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

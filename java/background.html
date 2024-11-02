@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>background</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>background</strong> shorthand property sets all of the background properties in one declaration and is composed of the <code class="common">background-color</code>,
+      <code class="common">background-position</code>, <code class="common">background-size</code>, <code class="common">background-repeat</code>, <code class="common">background-origin</code>, <code class="common">background-clip</code>,
+      <code class="common">background-attachment</code>, and <code class="common">background-image</code>.</p>
+
+    <p>This property has the following syntax:</p>
+    <pre class="common"><strong>background:</strong> <em>color position size repeat origin clip attachment image</em>|initial|inherit;</pre>
+
+    <p><strong>Note:</strong> Any values not specified are set to their default properties.</p>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="30%">Value</th>
+        <th align="left" width="70%">Description</th>
+        <th align="left">Version</th>
+      </tr>
+      <tr>
+        <td><em>color</em></td>
+        <td>Sets the background color to be used. See <code class="common">background-color</code> for possible values</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td><em>position</em></td>
+        <td>Sets the position of the background image. See <code class="common">background-position</code> for possible values</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td><em>size</em></td>
+        <td>Sets the size of the background images. See <code class="common">background-size</code> for possible values</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td><em>repeat</em></td>
+        <td>Sets how to repeat the background image. See <code class="common">background-repeat</code> for possible values</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td><em>origin</em></td>
+        <td>Sets the positioning areas for the background image. See <code class="common">background-origin</code> for possible values</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td><em>clip</em></td>
+        <td>Sets the painting areas for the background background image. See <code class="common">background-clip</code> for possible values</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td><em>attachment</em></td>
+        <td>Sets whether a background image is fixed or scrolls with the rest of the page. See <code class="common">background-attachment</code> for possible values</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td><em>image</em></td>
+        <td>Sets the background image to be used. See <code class="common">background-image</code> for possible values</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+        <td>2</td>
+      </tr>
+    </table>
+
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example shows how to specify several of the background properties in one declaration.</p>
+
+        <pre><code>body {
+  background: #00ff00 url('bg-image.gif') no-repeat fixed center;
+}</code></pre>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">3.5</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS1 + new properties in CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%"><em>see individual properties</em></td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

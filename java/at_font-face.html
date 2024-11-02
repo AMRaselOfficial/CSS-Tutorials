@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@font-face</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Description</h1>
+
+    <p>The <strong>@font-face</strong> parser directive is used to define custom fonts.</p>
+
+    <p>This directive has the form:</p>
+        <pre class="common">@font-face
+{
+  <em>font descriptors</em>
+}</pre>
+
+    <h1 class="common">Font Descriptors</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Font Descriptor</th>
+        <th align="left" nowrap>Value</th>
+        <th align="left" nowrap>Description</th>
+
+      </tr>
+      <tr>
+        <td>font-family</td>
+        <td><em>name</em></td>
+        <td>(required) Defines the name of the font.</td>
+      </tr>
+      <tr>
+        <td>src</td>
+        <td><em>URL</em></td>
+        <td>(required) Defines the URL(s) where the font should be downloaded from</td>
+      </tr>
+      <tr>
+        <td>font-stretch</td>
+        <td nowrap>normal<br/>
+          condensed<br/>
+          ultra-condensed<br/>
+          extra-condensed<br/>
+          semi-condensed<br/>
+          expanded<br/>
+          semi-expanded<br/>
+          extra-expanded<br/>
+          ultra-expanded
+        </td>
+        <td>(optional) Defines how the font should be stretched (default value is "normal")</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td nowrap>normal<br/>
+          italic<br/>
+          oblique
+        </td>
+        <td>(optional) Defines how the font should be styled (default value is "normal")</td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>normal<br/>
+          bold<br/>
+          100<br/>
+          200<br/>
+          300<br/>
+          400<br/>
+          500<br/>
+          600<br/>
+          700<br/>
+          800<br/>
+          900
+        </td>
+        <td>(optional) Defines the boldness of the font (default value is "normal")</td>
+      </tr>
+      <tr>
+        <td>unicode-range</td>
+        <td><em>unicode-range</em></td>
+        <td>(optional) Defines the range of unicode characters the font supports. Default value is "U+0-10FFFF"</td>
+      </tr>
+    </table>
+
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example specifies a font named "myFirstFont" and the URL where it can be found:</p>
+
+        <pre><code>@font-face
+{
+  font-family: myFirstFont;
+  src: url('Sansation_Light.ttf'),
+       url('Sansation_Light.eot'); /* IE */
+}  </code></pre>
+
+    <p>Now that the font has been define and is ready for use, the following example sets that font for all div elements:</p>
+
+        <pre><code>div
+{
+  font-family: myFirstFont;
+}</code></pre>
+    <br/>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReferenceSmall">
+      <tr>
+        <th style="width: 10%;">Font Format</th>
+        <th style="width: 18%;">Chrome</th>
+        <th style="width: 18%;">Firefox</th>
+        <th style="width: 18%;">IE</th>
+        <th style="width: 18%;">Safari</th>
+        <th style="width: 18%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsProperty" style="text-align: center;">TTF/OTF Fonts</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">3.6</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">3.0</td>
+        <td class="bsSupportedAll">10.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty" style="text-align: center;">WOFF Fonts</td>
+        <td class="bsSupportedAll">5.0</td>
+        <td class="bsSupportedAll">3.6</td>
+        <td class="bsSupportedAll">9.0</td>
+        <td class="bsSupportedAll">5.1</td>
+        <td class="bsSupportedAll">11.1</td>
+      </tr>
+      <tr>
+        <td class="bsProperty" style="text-align: center;">SVG Fonts</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">3.2</td>
+        <td class="bsSupportedAll">9.0</td>
+      </tr>
+      <tr>
+        <td class="bsProperty" style="text-align: center;">EOT Fonts</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedAll">6.0</td>
+        <td class="bsSupportedNone"></td>
+        <td class="bsSupportedNone"></td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS2</td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

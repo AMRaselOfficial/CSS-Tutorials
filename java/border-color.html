@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>border-color</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>border-color</strong> shorthand property sets all of the border colors in one declaration. This property can accept from one to four values.</p>
+
+    <pre class="common"><strong>border-color:</strong> &lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;|initial|inherit;</pre>
+    <p>If all four values are provided, the border colors are as specified.</p>
+
+    <pre class="common"><strong>border-color:</strong> &lt;top&gt; &lt;right/left&gt; &lt;bottom&gt;|initial|inherit;</pre>
+    <p>If three values are provided, right and left border colors are set as middle value.</p>
+
+    <pre class="common"><strong>border-color:</strong> &lt;top/bottom&gt; &lt;right/left&gt;|initial|inherit;</pre>
+    <p>If two values are provided, top and bottom border colors are set as the first value, right and left border colors are set as second value.</p>
+
+    <pre class="common"><strong>border-color:</strong> &lt;top/right/bottom/left&gt;|initial|inherit;</pre>
+    <p>If one value is provided, all four border color values are set the same.</p>
+
+    <p><b>Note:</b> Always declare the border-style property before the border-color property. An element must have borders before the border color can be changed.</p>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="20%">Value</th>
+        <th align="left" width="80%">Description</th>
+      </tr>
+      <tr>
+        <td><em>color_name</em></td>
+        <td>Sets the border color with a color name</td>
+      </tr>
+      <tr>
+        <td><em>hex_number</em></td>
+
+        <td>Sets the border color with a hex code</td>
+      </tr>
+      <tr>
+        <td><em>rgb_number</em></td>
+        <td>Specifies the border color with an RGB code</td>
+      </tr>
+      <tr>
+        <td>transparent</td>
+        <td>(default) Specifies that the border color should be transparent</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+    <h1 class="common">Examples</h1>
+
+    <p>This example sets the style and color of all four borders.</p>
+
+        <pre><code>p {
+  border-style: solid;
+  border-color: #ff0000 #0000ff;
+}</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+      <p style="border-style: solid; border-color: #ff0000 #0000ff;">This is a paragraph.</p>
+    </div>
+    <br/>
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">4.0</td>
+        <td class="bsSupportedAll">1.0</td>
+        <td class="bsSupportedAll">3.5</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS1</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%"><em>not specified</em></td>
+      </tr>
+    </table>
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

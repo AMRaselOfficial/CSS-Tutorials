@@ -1,0 +1,947 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Colors</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">CSS Colors (RGB)</h1>
+
+    <p>Colors in CSS are displayed using a predefined color name or a combination of red, green, and blue color values. The RGB color values can be specified in decimal, hexadecimal, or as percentages. Using this method, over 16 million different colors can be obtained.</p>
+
+    <h2 class="common">Example</h2>
+        <pre><code>&lt;div style=&quot;background-color: rgb(255,0,0);&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>The following table lists some of the more common color names and their hexadecimal equivalents. These color names are recognized by the W3C as "web standard".</p>
+
+    <table class="reference">
+      <tr>
+        <th align="left" width="25%">Color</th>
+        <th align="left" width="50%">Name</th>
+        <th align="left" width="25%">Hex</th>
+      </tr>
+      <tr>
+        <td bgcolor="#000000"></td>
+        <td><code>black</code></td>
+        <td><code>#000000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#000080"></td>
+        <td><code>navy</code></td>
+        <td><code>#000080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#0000ff"></td>
+        <td><code>blue</code></td>
+        <td><code>#0000ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#008000"></td>
+        <td><code>green</code></td>
+        <td><code>#008000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#008080"></td>
+        <td><code>teal</code></td>
+        <td><code>#008080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ff00"></td>
+        <td><code>lime</code></td>
+        <td><code>#00ff00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ffff"></td>
+        <td><code>aqua</code></td>
+        <td><code>#00ffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#800000"></td>
+        <td><code>maroon</code></td>
+        <td><code>#800000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#800080"></td>
+        <td><code>purple</code></td>
+        <td><code>#800080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#808000"></td>
+        <td><code>olive</code></td>
+        <td><code>#808000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#808080"></td>
+        <td><code>gray</code></td>
+        <td><code>#808080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#c0c0c0"></td>
+        <td><code>silver</code></td>
+        <td><code>#c0c0c0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff0000"></td>
+        <td><code>red</code></td>
+        <td><code>#ff0000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff00ff"></td>
+        <td><code>fuchsia</code></td>
+        <td><code>#ff00ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffff00"></td>
+        <td><code>yellow</code></td>
+        <td><code>#ffff00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff"></td>
+        <td><code>white</code></td>
+        <td><code>#ffffff</code></td>
+      </tr>
+    </table>
+    <br/>
+
+    <div class="box-3d-red" style="float: right;">CSS3</div>
+    <h1 class="common">CSS Colors (RGBA)</h1>
+
+    <p>The CSS3 specification adds the ability to specify the "alpha", or opacity, of a color. The alpha is specifed as a decimal number between 0.0 (transparent) and 1.0 (opaque).</p>
+
+    <h2 class="common">Example</h2>
+        <pre><code>&lt;div style=&quot;background-color: rgba(255,0,0,0.2);&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>The following boxes show the color "red" at different alpha levels:</p>
+
+    <table width="100%">
+      <tr>
+        <td align="center" valign="middle" style="height: 50px; background: rgba(255, 0, 0, 0.2);">0.2</td>
+        <td align="center" valign="middle" style="height: 50px; background: rgba(255, 0, 0, 0.4);">0.4</td>
+        <td align="center" valign="middle" style="height: 50px; background: rgba(255, 0, 0, 0.6);">0.6</td>
+        <td align="center" valign="middle" style="height: 50px; background: rgba(255, 0, 0, 0.8);">0.8</td>
+        <td align="center" valign="middle" style="height: 50px; background: rgba(255, 0, 0, 1.0);">1.0</td>
+      </tr>
+    </table>
+    <br/>
+
+    <div class="box-3d-red" style="float: right;">CSS3</div>
+    <h1 class="common">CSS Colors (HSL)</h1>
+
+    <p>
+      The CSS3 specification adds the ability to specify colors using HSL (Hue, Saturation, Lightness). HSL takes three values:<br/>
+      - <strong>Hue</strong> is the degree on the color wheel: 0 = red, 120 = green, 240 is blue<br/>
+      - <strong>Saturation</strong> is a percentage, where 100% is the full color<br/>
+      - <strong>Lightness</strong> is a percentage, where 0% is dark (black) and 100% is light (white)
+    </p>
+
+    <h2 class="common">Example</h2>
+        <pre><code>&lt;div style=&quot;background-color: hsl(0,100%,50%);&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>The following boxes show the three basic colors for HSL:</p>
+
+    <table width="100%">
+      <td width="20%" style="height: 50px; background: hsl(0, 100%, 50%);">&nbsp;</td>
+      <td>
+        <small>hsl(0,100%,50%)</small>
+      </td>
+      </tr>
+      <tr>
+        <td style="height: 50px; background: hsl(120, 100%, 50%);">&nbsp;</td>
+        <td>
+          <small>hsl(120,100%,50%)</small>
+        </td>
+      </tr>
+      <tr>
+        <td style="height: 50px; background: hsl(240, 100%, 50%);">&nbsp;</td>
+        <td>
+          <small>hsl(240,100%,50%)</small>
+        </td>
+      </tr>
+    </table>
+    <br/>
+
+    <div class="box-3d-red" style="float: right;">CSS3</div>
+    <h1 class="common">CSS Colors (HSLA)</h1>
+
+    <p>
+      The CSS3 specification adds the ability to specify colors using HSLA (Hue, Saturation, Lightness, Alpha). HSLA takes four values:<br/>
+      - <strong>Hue</strong> is the degree on the color wheel: 0 = red, 120 = green, 240 is blue<br/>
+      - <strong>Saturation</strong> is a percentage, where 100% is the full color<br/>
+      - <strong>Lightness</strong> is a percentage, where 0% is dark (black) and 100% is light (white)<br/>
+      - <strong>Alpha</strong> is a decimal number between 0.0 (transparent) and 1.0 (opaque)
+    </p>
+
+    <h2 class="common">Example</h2>
+        <pre><code>&lt;div style=&quot;background-color: hsla(0,100%,50%,0.2);&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>The following boxes show the color "red", hsl(0,100%,50%), at different alpha levels:</p>
+
+
+    <table width="100%">
+      <tr>
+        <td align="center" valign="middle" style="height: 50px; background: hsla(0, 100%, 50%, 0.2);">0.2</td>
+        <td align="center" valign="middle" style="height: 50px; background: hsla(0, 100%, 50%, 0.4);">0.4</td>
+        <td align="center" valign="middle" style="height: 50px; background: hsla(0, 100%, 50%, 0.6);">0.6</td>
+        <td align="center" valign="middle" style="height: 50px; background: hsla(0, 100%, 50%, 0.8);">0.8</td>
+        <td align="center" valign="middle" style="height: 50px; background: hsla(0, 100%, 50%, 1.0);">1.0</td>
+      </tr>
+    </table>
+
+    <h1 class="common">CSS Color Names</h1>
+
+    <p>The following table lists the color names supported by most browsers and their hexadecimal equivalents. Except for those also listed in the table above, these color names are not recognized by the W3C as "web standard".</p>
+
+    <table class="reference">
+
+      <tr>
+        <th align="left" width="25%">Color</th>
+        <th align="left" width="50%">Name</th>
+        <th align="left" width="25%">Hex</th>
+      </tr>
+      <tr>
+        <td bgcolor="#f0f8ff"></td>
+        <td>AliceBlue</td>
+        <td><code>#f0f8ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#faebd7"></td>
+        <td>AntiqueWhite</td>
+        <td><code>#faebd7</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ffff"></td>
+        <td>Aqua</td>
+        <td><code>#00ffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#7fffd4"></td>
+        <td>Aquamarine</td>
+        <td><code>#7fffd4</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f0ffff"></td>
+        <td>Azure</td>
+        <td><code>#f0ffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f5f5dc"></td>
+        <td>Beige</td>
+        <td><code>#f5f5dc</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffe4c4"></td>
+        <td>Bisque</td>
+        <td><code>#ffe4c4</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#000000"></td>
+        <td>Black</td>
+        <td><code>#000000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffebcd"></td>
+        <td>BlanchedAlmond</td>
+        <td><code>#ffebcd</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#0000ff"></td>
+        <td>Blue</td>
+        <td><code>#0000ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8a2be2"></td>
+        <td>BlueViolet</td>
+        <td><code>#8a2be2</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#a52a2a"></td>
+        <td>Brown</td>
+        <td><code>#a52a2a</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#deb887"></td>
+        <td>BurlyWood</td>
+        <td><code>#deb887</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#5f9ea0"></td>
+        <td>CadetBlue</td>
+        <td><code>#5f9ea0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#7fff00"></td>
+        <td>Chartreuse</td>
+        <td><code>#7fff00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#d2691e"></td>
+        <td>Chocolate</td>
+        <td><code>#d2691e</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff7f50"></td>
+        <td>Coral</td>
+        <td><code>#ff7f50</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#6495ed"></td>
+        <td>CornflowerBlue</td>
+        <td><code>#6495ed</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fff8dc"></td>
+        <td>Cornsilk</td>
+        <td><code>#fff8dc</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#dc143c"></td>
+        <td>Crimson</td>
+        <td><code>#dc143c</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ffff"></td>
+        <td>Cyan</td>
+        <td><code>#00ffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00008b"></td>
+        <td>DarkBlue</td>
+        <td><code>#00008b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#008b8b"></td>
+        <td>DarkCyan</td>
+        <td><code>#008b8b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#b8860b"></td>
+        <td>DarkGoldenRod</td>
+        <td><code>#b8860b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#a9a9a9"></td>
+        <td>DarkGray</td>
+        <td><code>#a9a9a9</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#006400"></td>
+        <td>DarkGreen</td>
+        <td><code>#006400</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#bdb76b"></td>
+        <td>DarkKhaki</td>
+        <td><code>#bdb76b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8b008b"></td>
+        <td>DarkMagenta</td>
+        <td><code>#8b008b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#556b2f"></td>
+        <td>DarkOliveGreen</td>
+        <td><code>#556b2f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff8c00"></td>
+        <td>Darkorange</td>
+        <td><code>#ff8c00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#9932cc"></td>
+        <td>DarkOrchid</td>
+        <td><code>#9932cc</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8b0000"></td>
+        <td>DarkRed</td>
+        <td><code>#8b0000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9967a"></td>
+        <td>DarkSalmon</td>
+        <td><code>#e9967a</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8fbc8f"></td>
+        <td>DarkSeaGreen</td>
+        <td><code>#8fbc8f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#483d8b"></td>
+        <td>DarkSlateBlue</td>
+        <td><code>#483d8b</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#2f4f4f"></td>
+        <td>DarkSlateGray</td>
+        <td><code>#2f4f4f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ced1"></td>
+        <td>DarkTurquoise</td>
+        <td><code>#00ced1</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#9400d3"></td>
+        <td>DarkViolet</td>
+        <td><code>#9400d3</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff1493"></td>
+        <td>DeepPink</td>
+        <td><code>#ff1493</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00bfff"></td>
+        <td>DeepSkyBlue</td>
+        <td><code>#00bfff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#696969"></td>
+        <td>DimGray</td>
+        <td><code>#696969</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#1e90ff"></td>
+        <td>DodgerBlue</td>
+        <td><code>#1e90ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#b22222"></td>
+        <td>FireBrick</td>
+        <td><code>#b22222</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fffaf0"></td>
+        <td>FloralWhite</td>
+        <td><code>#fffaf0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#228b22"></td>
+        <td>ForestGreen</td>
+        <td><code>#228b22</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff00ff"></td>
+        <td>Fuchsia</td>
+        <td><code>#ff00ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#dcdcdc"></td>
+        <td>Gainsboro</td>
+        <td><code>#dcdcdc</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f8f8ff"></td>
+        <td>GhostWhite</td>
+        <td><code>#f8f8ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffd700"></td>
+        <td>Gold</td>
+        <td><code>#ffd700</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#daa520"></td>
+        <td>GoldenRod</td>
+        <td><code>#daa520</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#808080"></td>
+        <td>Gray</td>
+        <td><code>#808080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#008000"></td>
+        <td>Green</td>
+        <td><code>#008000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#adff2f"></td>
+        <td>GreenYellow</td>
+        <td><code>#adff2f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f0fff0"></td>
+        <td>HoneyDew</td>
+        <td><code>#f0fff0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff69b4"></td>
+        <td>HotPink</td>
+        <td><code>#ff69b4</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#cd5c5c"></td>
+        <td>IndianRed</td>
+        <td><code>#cd5c5c</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#4b0082"></td>
+        <td>Indigo</td>
+        <td><code>#4b0082</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fffff0"></td>
+        <td>Ivory</td>
+        <td><code>#fffff0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f0e68c"></td>
+        <td>Khaki</td>
+        <td><code>#f0e68c</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6e6fa"></td>
+        <td>Lavender</td>
+        <td><code>#e6e6fa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fff0f5"></td>
+        <td>LavenderBlush</td>
+        <td><code>#fff0f5</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#7cfc00"></td>
+        <td>LawnGreen</td>
+        <td><code>#7cfc00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fffacd"></td>
+        <td>LemonChiffon</td>
+        <td><code>#fffacd</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#add8e6"></td>
+        <td>LightBlue</td>
+        <td><code>#add8e6</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f08080"></td>
+        <td>LightCoral</td>
+        <td><code>#f08080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#e0ffff"></td>
+        <td>LightCyan</td>
+        <td><code>#e0ffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fafad2"></td>
+        <td>LightGoldenRodYellow</td>
+        <td><code>#fafad2</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#d3d3d3"></td>
+        <td>LightGrey</td>
+        <td><code>#d3d3d3</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#90ee90"></td>
+        <td>LightGreen</td>
+        <td><code>#90ee90</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffb6c1"></td>
+        <td>LightPink</td>
+        <td><code>#ffb6c1</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffa07a"></td>
+        <td>LightSalmon</td>
+        <td><code>#ffa07a</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#20b2aa"></td>
+        <td>LightSeaGreen</td>
+        <td><code>#20b2aa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#87cefa"></td>
+        <td>LightSkyBlue</td>
+        <td><code>#87cefa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#778899"></td>
+        <td>LightSlateGray</td>
+        <td><code>#778899</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#b0c4de"></td>
+        <td>LightSteelBlue</td>
+        <td><code>#b0c4de</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffe0"></td>
+        <td>LightYellow</td>
+        <td><code>#ffffe0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ff00"></td>
+        <td>Lime</td>
+        <td><code>#00ff00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#32cd32"></td>
+        <td>LimeGreen</td>
+        <td><code>#32cd32</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#faf0e6"></td>
+        <td>Linen</td>
+        <td><code>#faf0e6</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff00ff"></td>
+        <td>Magenta</td>
+        <td><code>#ff00ff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#800000"></td>
+        <td>Maroon</td>
+        <td><code>#800000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#66cdaa"></td>
+        <td>MediumAquaMarine</td>
+        <td><code>#66cdaa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#0000cd"></td>
+        <td>MediumBlue</td>
+        <td><code>#0000cd</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ba55d3"></td>
+        <td>MediumOrchid</td>
+        <td><code>#ba55d3</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#9370d8"></td>
+        <td>MediumPurple</td>
+        <td><code>#9370d8</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#3cb371"></td>
+        <td>MediumSeaGreen</td>
+        <td><code>#3cb371</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#7b68ee"></td>
+        <td>MediumSlateBlue</td>
+        <td><code>#7b68ee</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00fa9a"></td>
+        <td>MediumSpringGreen</td>
+        <td><code>#00fa9a</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#48d1cc"></td>
+        <td>MediumTurquoise</td>
+        <td><code>#48d1cc</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#c71585"></td>
+        <td>MediumVioletRed</td>
+        <td><code>#c71585</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#191970"></td>
+        <td>MidnightBlue</td>
+        <td><code>#191970</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f5fffa"></td>
+        <td>MintCream</td>
+        <td><code>#f5fffa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffe4e1"></td>
+        <td>MistyRose</td>
+        <td><code>#ffe4e1</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffe4b5"></td>
+        <td>Moccasin</td>
+        <td><code>#ffe4b5</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffdead"></td>
+        <td>NavajoWhite</td>
+        <td><code>#ffdead</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#000080"></td>
+        <td>Navy</td>
+        <td><code>#000080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fdf5e6"></td>
+        <td>OldLace</td>
+        <td><code>#fdf5e6</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#808000"></td>
+        <td>Olive</td>
+        <td><code>#808000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#6b8e23"></td>
+        <td>OliveDrab</td>
+        <td><code>#6b8e23</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffa500"></td>
+        <td>Orange</td>
+        <td><code>#ffa500</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff4500"></td>
+        <td>OrangeRed</td>
+        <td><code>#ff4500</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#da70d6"></td>
+        <td>Orchid</td>
+        <td><code>#da70d6</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#eee8aa"></td>
+        <td>PaleGoldenRod</td>
+        <td><code>#eee8aa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#98fb98"></td>
+        <td>PaleGreen</td>
+        <td><code>#98fb98</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#afeeee"></td>
+        <td>PaleTurquoise</td>
+        <td><code>#afeeee</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#d87093"></td>
+        <td>PaleVioletRed</td>
+        <td><code>#d87093</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffefd5"></td>
+        <td>PapayaWhip</td>
+        <td><code>#ffefd5</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffdab9"></td>
+        <td>PeachPuff</td>
+        <td><code>#ffdab9</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#cd853f"></td>
+        <td>Peru</td>
+        <td><code>#cd853f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffc0cb"></td>
+        <td>Pink</td>
+        <td><code>#ffc0cb</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#dda0dd"></td>
+        <td>Plum</td>
+        <td><code>#dda0dd</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#b0e0e6"></td>
+        <td>PowderBlue</td>
+        <td><code>#b0e0e6</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#800080"></td>
+        <td>Purple</td>
+        <td><code>#800080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff0000"></td>
+        <td>Red</td>
+        <td><code>#ff0000</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#bc8f8f"></td>
+        <td>RosyBrown</td>
+        <td><code>#bc8f8f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#4169e1"></td>
+        <td>RoyalBlue</td>
+        <td><code>#4169e1</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8b4513"></td>
+        <td>SaddleBrown</td>
+        <td><code>#8b4513</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fa8072"></td>
+        <td>Salmon</td>
+        <td><code>#fa8072</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f4a460"></td>
+        <td>SandyBrown</td>
+        <td><code>#f4a460</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#2e8b57"></td>
+        <td>SeaGreen</td>
+        <td><code>#2e8b57</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fff5ee"></td>
+        <td>SeaShell</td>
+        <td><code>#fff5ee</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#a0522d"></td>
+        <td>Sienna</td>
+        <td><code>#a0522d</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#c0c0c0"></td>
+        <td>Silver</td>
+        <td><code>#c0c0c0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#87ceeb"></td>
+        <td>SkyBlue</td>
+        <td><code>#87ceeb</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#6a5acd"></td>
+        <td>SlateBlue</td>
+        <td><code>#6a5acd</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#708090"></td>
+        <td>SlateGray</td>
+        <td><code>#708090</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#fffafa"></td>
+        <td>Snow</td>
+        <td><code>#fffafa</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#00ff7f"></td>
+        <td>SpringGreen</td>
+        <td><code>#00ff7f</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#4682b4"></td>
+        <td>SteelBlue</td>
+        <td><code>#4682b4</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#d2b48c"></td>
+        <td>Tan</td>
+        <td><code>#d2b48c</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#008080"></td>
+        <td>Teal</td>
+        <td><code>#008080</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#d8bfd8"></td>
+        <td>Thistle</td>
+        <td><code>#d8bfd8</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ff6347"></td>
+        <td>Tomato</td>
+        <td><code>#ff6347</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#40e0d0"></td>
+        <td>Turquoise</td>
+        <td><code>#40e0d0</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ee82ee"></td>
+        <td>Violet</td>
+        <td><code>#ee82ee</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f5deb3"></td>
+        <td>Wheat</td>
+        <td><code>#f5deb3</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff"></td>
+        <td>White</td>
+        <td><code>#ffffff</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#f5f5f5"></td>
+        <td>WhiteSmoke</td>
+        <td><code>#f5f5f5</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffff00"></td>
+        <td>Yellow</td>
+        <td><code>#ffff00</code></td>
+      </tr>
+      <tr>
+        <td bgcolor="#9acd32"></td>
+        <td>YellowGreen</td>
+        <td><code>#9acd32</code></td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

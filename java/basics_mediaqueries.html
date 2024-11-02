@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Media Queries</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link rel="stylesheet" href="highlight.pack.css">
+  <script src="highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+  <style>
+    .label {
+    width: 40px;
+    text-align: center;
+    }
+
+    .label-success {
+    display: none;
+    }
+  </style>
+  <style>
+    @media all{#row1 {color: green; font-weight: 700;} #row1 .yesno {background-image:url('img/yes.gif');} #row1 .label-success { display: inline-block; } #row1 .label-important { display: none; } #row1 td { background-color: #DFF0D8;}}
+    @media screen{#row2 {color: green; font-weight: 700;} #row2 .yesno {background-image:url('img/yes.gif');} #row2 .label-success { display: inline-block; } #row2 .label-important { display: none; } #row2 td { background-color: #DFF0D8;}}
+    @media handheld{#row3 {color: green; font-weight: 700;} #row3 .yesno {background-image:url('img/yes.gif');} #row3 .label-success { display: inline-block; } #row3 .label-important { display: none; } #row3 td { background-color: #DFF0D8;}}
+    @media aural{#row4 {color: green; font-weight: 700;} #row4 .yesno {background-image:url('img/yes.gif');} #row4 .label-success { display: inline-block; } #row4 .label-important { display: none; } #row4 td { background-color: #DFF0D8;}}
+    @media braille{#row5 {color: green; font-weight: 700;} #row5 .yesno {background-image:url('img/yes.gif');} #row5 .label-success { display: inline-block; } #row5 .label-important { display: none; } #row5 td { background-color: #DFF0D8;}}
+    @media embossed{#row6 {color: green; font-weight: 700;} #row6 .yesno {background-image:url('img/yes.gif');} #row6 .label-success { display: inline-block; } #row6 .label-important { display: none; } #row6 td { background-color: #DFF0D8;}}
+    @media projection{#row7 {color: green; font-weight: 700;} #row7 .yesno {background-image:url('img/yes.gif');} #row7 .label-success { display: inline-block; } #row7 .label-important { display: none; } #row7 td { background-color: #DFF0D8;}}
+    @media tty{#row8 {color: green; font-weight: 700;} #row8 .yesno {background-image:url('img/yes.gif');} #row8 .label-success { display: inline-block; } #row8 .label-important { display: none; } #row8 td { background-color: #DFF0D8;}}
+    @media tv{#row9 {color: green; font-weight: 700;} #row9 .yesno {background-image:url('img/yes.gif');} #row9 .label-success { display: inline-block; } #row9 .label-important { display: none; } #row9 td { background-color: #DFF0D8;}}
+    @media print{#row10 {color: green; font-weight: 700;} #row10 .yesno {background-image:url('img/yes.gif');} #row10 .label-success { display: inline-block; } #row10 .label-important { display: none; } #row10 td { background-color: #DFF0D8;}}
+    @media 3d-glasses{#row11 {color: green; font-weight: 700;} #row11 .yesno {background-image:url('img/yes.gif');} #row11 .label-success { display: inline-block; } #row11 .label-important { display: none; } #row11 td { background-color: #DFF0D8;}}
+    @media all and (orientation:landscape){#row12 {color: green; font-weight: 700;} #row12 .yesno {background-image:url('img/yes.gif');} #row12 .label-success { display: inline-block; } #row12 .label-important { display: none; } #row12 td { background-color: #DFF0D8;}}
+    @media all and (orientation:portrait){#row13 {color: green; font-weight: 700;} #row13 .yesno {background-image:url('img/yes.gif');} #row13 .label-success { display: inline-block; } #row13 .label-important { display: none; } #row13 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 320px){#row14 {color: green; font-weight: 700;} #row14 .yesno {background-image:url('img/yes.gif');} #row14 .label-success { display: inline-block; } #row14 .label-important { display: none; } #row14 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 480px){#row15 {color: green; font-weight: 700;} #row15 .yesno {background-image:url('img/yes.gif');} #row15 .label-success { display: inline-block; } #row15 .label-important { display: none; } #row15 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 1224px){#row16 {color: green; font-weight: 700;} #row16 .yesno {background-image:url('img/yes.gif');} #row16 .label-success { display: inline-block; } #row16 .label-important { display: none; } #row16 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 1824px){#row17 {color: green; font-weight: 700;} #row17 .yesno {background-image:url('img/yes.gif');} #row17 .label-success { display: inline-block; } #row17 .label-important { display: none; } #row17 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 29em){#row18 {color: green; font-weight: 700;} #row18 .yesno {background-image:url('img/yes.gif');} #row18 .label-success { display: inline-block; } #row18 .label-important { display: none; } #row18 td { background-color: #DFF0D8;}}
+    @media screen and (min-width : 35em){#row19 {color: green; font-weight: 700;} #row19 .yesno {background-image:url('img/yes.gif');} #row19 .label-success { display: inline-block; } #row19 .label-important { display: none; } #row19 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 2/3){#row20 {color: green; font-weight: 700;} #row20 .yesno {background-image:url('img/yes.gif');} #row20 .label-success { display: inline-block; } #row20 .label-important { display: none; } #row20 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 4/3){#row21 {color: green; font-weight: 700;} #row21 .yesno {background-image:url('img/yes.gif');} #row21 .label-success { display: inline-block; } #row21 .label-important { display: none; } #row21 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 3/4){#row22 {color: green; font-weight: 700;} #row22 .yesno {background-image:url('img/yes.gif');} #row22 .label-success { display: inline-block; } #row22 .label-important { display: none; } #row22 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 3/5){#row23 {color: green; font-weight: 700;} #row23 .yesno {background-image:url('img/yes.gif');} #row23 .label-success { display: inline-block; } #row23 .label-important { display: none; } #row23 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 5/3){#row24 {color: green; font-weight: 700;} #row24 .yesno {background-image:url('img/yes.gif');} #row24 .label-success { display: inline-block; } #row24 .label-important { display: none; } #row24 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 8/5){#row25 {color: green; font-weight: 700;} #row25 .yesno {background-image:url('img/yes.gif');} #row25 .label-success { display: inline-block; } #row25 .label-important { display: none; } #row25 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 15/9){#row26 {color: green; font-weight: 700;} #row26 .yesno {background-image:url('img/yes.gif');} #row26 .label-success { display: inline-block; } #row26 .label-important { display: none; } #row26 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 9/16){#row27 {color: green; font-weight: 700;} #row27 .yesno {background-image:url('img/yes.gif');} #row27 .label-success { display: inline-block; } #row27 .label-important { display: none; } #row27 td { background-color: #DFF0D8;}}
+    @media all and (device-aspect-ratio: 256/135){#row28 {color: green; font-weight: 700;} #row28 .yesno {background-image:url('img/yes.gif');} #row28 .label-success { display: inline-block; } #row28 .label-important { display: none; } #row28 td { background-color: #DFF0D8;}}
+    @media all and (-webkit-device-pixel-ratio: .75){#row29 {color: green; font-weight: 700;} #row29 .yesno {background-image:url('img/yes.gif');} #row29 .label-success { display: inline-block; } #row29 .label-important { display: none; } #row29 td { background-color: #DFF0D8;}}
+    @media all and (-webkit-device-pixel-ratio: 1){#row30 {color: green; font-weight: 700;} #row30 .yesno {background-image:url('img/yes.gif');} #row30 .label-success { display: inline-block; } #row30 .label-important { display: none; } #row30 td { background-color: #DFF0D8;}}
+    @media screen and (-o-device-pixel-ratio: 1/1){#row31 {color: green; font-weight: 700;} #row31 .yesno {background-image:url('img/yes.gif');} #row31 .label-success { display: inline-block; } #row31 .label-important { display: none; } #row31 td { background-color: #DFF0D8;}}
+    @media screen and (resolution: 96dpi){#row32 {color: green; font-weight: 700;} #row32 .yesno {background-image:url('img/yes.gif');} #row32 .label-success { display: inline-block; } #row32 .label-important { display: none; } #row32 td { background-color: #DFF0D8;}}
+    @media screen and (-webkit-min-device-pixel-ratio: 1.3){#row33 {color: green; font-weight: 700;} #row33 .yesno {background-image:url('img/yes.gif');} #row33 .label-success { display: inline-block; } #row33 .label-important { display: none; } #row33 td { background-color: #DFF0D8;}}
+    @media screen and (-webkit-device-pixel-ratio: 1.5), screen and (resolution: 96dpi){#row34 {color: green; font-weight: 700;} #row34 .yesno {background-image:url('img/yes.gif');} #row34 .label-success { display: inline-block; } #row34 .label-important { display: none; } #row34 td { background-color: #DFF0D8;}}
+    @media all and (-webkit-device-pixel-ratio: 1.5){#row35 {color: green; font-weight: 700;} #row35 .yesno {background-image:url('img/yes.gif');} #row35 .label-success { display: inline-block; } #row35 .label-important { display: none; } #row35 td { background-color: #DFF0D8;}}
+    @media screen and (-o-device-pixel-ratio: 3/2){#row36 {color: green; font-weight: 700;} #row36 .yesno {background-image:url('img/yes.gif');} #row36 .label-success { display: inline-block; } #row36 .label-important { display: none; } #row36 td { background-color: #DFF0D8;}}
+    @media screen and (resolution: 144dpi){#row37 {color: green; font-weight: 700;} #row37 .yesno {background-image:url('img/yes.gif');} #row37 .label-success { display: inline-block; } #row37 .label-important { display: none; } #row37 td { background-color: #DFF0D8;}}
+    @media screen and (-webkit-device-pixel-ratio: 1.5), screen and (resolution: 144dpi){#row38 {color: green; font-weight: 700;} #row38 .yesno {background-image:url('img/yes.gif');} #row38 .label-success { display: inline-block; } #row38 .label-important { display: none; } #row38 td { background-color: #DFF0D8;}}
+    @media all and (-webkit-min-device-pixel-ratio: 2){#row39 {color: green; font-weight: 700;} #row39 .yesno {background-image:url('img/yes.gif');} #row39 .label-success { display: inline-block; } #row39 .label-important { display: none; } #row39 td { background-color: #DFF0D8;}}
+    @media screen and (min-resolution: 192dpi){#row40 {color: green; font-weight: 700;} #row40 .yesno {background-image:url('img/yes.gif');} #row40 .label-success { display: inline-block; } #row40 .label-important { display: none; } #row40 td { background-color: #DFF0D8;}}
+    @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){#row41 {color: green; font-weight: 700;} #row41 .yesno {background-image:url('img/yes.gif');} #row41 .label-success { display: inline-block; } #row41 .label-important { display: none; } #row41 td { background-color: #DFF0D8;}}
+    @media screen and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){#row42 {color: green; font-weight: 700;} #row42 .yesno {background-image:url('img/yes.gif');} #row42 .label-success { display: inline-block; } #row42 .label-important { display: none; } #row42 td { background-color: #DFF0D8;}}
+    @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1){#row43 {color: green; font-weight: 700;} #row43 .yesno {background-image:url('img/yes.gif');} #row43 .label-success { display: inline-block; } #row43 .label-important { display: none; } #row43 td { background-color: #DFF0D8;}}
+    @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2){#row44 {color: green; font-weight: 700;} #row44 .yesno {background-image:url('img/yes.gif');} #row44 .label-success { display: inline-block; } #row44 .label-important { display: none; } #row44 td { background-color: #DFF0D8;}}
+    @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 3){#row45 {color: green; font-weight: 700;} #row45 .yesno {background-image:url('img/yes.gif');} #row44 .label-success { display: inline-block; } #row45 .label-important { display: none; } #row44 td { background-color: #DFF0D8;}}
+  </style>
+  <style scoped>
+    table th {
+      background-color: lightskyblue;
+    }
+
+    td:nth-child(1) {
+      width: 20%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+    <p>The following table lists some common CSS media queries:</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width: 20%; text-align: center;">Result</th>
+          <th>Query</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr id='row1'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all</td>
+
+        </tr>
+        <tr id='row2'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen</td>
+
+        </tr>
+        <tr id='row3'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media handheld</td>
+
+        </tr>
+        <tr id='row4'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media aural</td>
+
+        </tr>
+        <tr id='row5'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media braille</td>
+
+        </tr>
+        <tr id='row6'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media embossed</td>
+
+        </tr>
+        <tr id='row7'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media projection</td>
+
+        </tr>
+        <tr id='row8'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media tty</td>
+
+        </tr>
+        <tr id='row9'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media tv</td>
+
+        </tr>
+        <tr id='row10'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media print</td>
+
+        </tr>
+        <tr id='row11'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media 3d-glasses</td>
+
+        </tr>
+        <tr id='row12'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (orientation: landscape)</td>
+
+        </tr>
+        <tr id='row13'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (orientation: portrait)</td>
+
+        </tr>
+        <tr id='row14'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 320px)</td>
+
+        </tr>
+        <tr id='row15'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 480px)</td>
+
+        </tr>
+        <tr id='row16'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 1224px)</td>
+
+        </tr>
+        <tr id='row17'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 1824px)</td>
+
+        </tr>
+        <tr id='row18'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 29em)</td>
+
+        </tr>
+        <tr id='row19'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-width : 35em)</td>
+
+        </tr>
+        <tr id='row20'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 2/3)</td>
+
+        </tr>
+        <tr id='row21'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 4/3)</td>
+
+        </tr>
+        <tr id='row22'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 3/4)</td>
+
+        </tr>
+        <tr id='row23'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 3/5)</td>
+
+        </tr>
+        <tr id='row24'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 5/3)</td>
+
+        </tr>
+        <tr id='row25'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 8/5)</td>
+
+        </tr>
+        <tr id='row26'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 15/9)</td>
+
+        </tr>
+        <tr id='row27'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 9/16)</td>
+
+        </tr>
+        <tr id='row28'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (device-aspect-ratio: 256/135)</td>
+
+        </tr>
+        <tr id='row29'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (-webkit-device-pixel-ratio: .75)</td>
+
+        </tr>
+        <tr id='row30'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (-webkit-device-pixel-ratio: 1)</td>
+
+        </tr>
+        <tr id='row31'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (-o-device-pixel-ratio: 1/1)</td>
+
+        </tr>
+        <tr id='row32'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (resolution: 96dpi)</td>
+
+        </tr>
+        <tr id='row33'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (-webkit-min-device-pixel-ratio: 1.3)</td>
+
+        </tr>
+        <tr id='row34'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (-webkit-device-pixel-ratio: 1.5), screen and (resolution: 96dpi)</td>
+
+        </tr>
+        <tr id='row35'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (-webkit-device-pixel-ratio: 1.5)</td>
+
+        </tr>
+        <tr id='row36'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (-o-device-pixel-ratio: 3/2)</td>
+
+        </tr>
+        <tr id='row37'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (resolution: 144dpi)</td>
+
+        </tr>
+        <tr id='row38'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (-webkit-device-pixel-ratio: 1.5), screen and (resolution: 144dpi)</td>
+
+        </tr>
+        <tr id='row39'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (-webkit-min-device-pixel-ratio: 2)</td>
+
+        </tr>
+        <tr id='row40'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (min-resolution: 192dpi)</td>
+
+        </tr>
+        <tr id='row41'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)</td>
+
+        </tr>
+        <tr id='row42'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)</td>
+        </tr>
+        <tr id='row43'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1)</td>
+        </tr>
+        <tr id='row44'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)</td>
+        </tr>
+
+        <tr id='row45'>
+          <td><span class="label label-success">YES</span><span class="label label-important">NO</span></td>
+          <td>@media all and (-webkit-device-pixel-ratio: 3)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

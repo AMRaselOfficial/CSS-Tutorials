@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>animation-delay</title>
+  <meta charset="utf-8"/>
+
+  <!-- Viewport Setting for Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Quick Guide styles -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Highlight Pack -->
+  <link href="css/highlight.pack.css" rel="stylesheet">
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({tabReplace: '    '});
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+  <div class="main">
+
+    <!-- DATA BEGIN -->
+
+    <h1 class="common">Property Description</h1>
+
+    <p>The <strong>animation-delay</strong> property specifies when an animation is to start.</p>
+
+    <p>The animation-delay value can be defined in seconds (s) or milliseconds (ms).</p>
+
+    <p>This property has the following syntax:</p>
+
+    <pre class="common"><strong>animation-delay:</strong> <em>time</em>|initial|inherit;</pre>
+
+    <h1 class="common">Property Values</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" width="30%">Value</th>
+        <th align="left">Description</th>
+      </tr>
+      <tr>
+        <td nowrap="nowrap"><em>time</em></td>
+        <td>(optional) Specifies the time at which the animation should begin. This is a time offset from when the the animation is applied to the element.<br>
+          <br>
+          The time can be specified as a negative number, at which the animation will begin immediately, but the animation will start at the specified time into the animation.<br>
+          <br>
+          The time may be specified in either seconds (by specifying "s" as the unit) or milliseconds (by specifying "ms" as the unit). If no units are specified, seconds are assumed.<br>
+          <br>
+          Default = 0 (animation starts immediately)
+        </td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Specifies that the value of the property should be set to the default value</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Specifies that the value of the property should be inherited from the parent element</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Examples</h1>
+
+    <p>This example shows how to specify that the animation will start 2 seconds into the cycle:</p>
+
+        <pre><code>&lt;style type=&quot;text/css&quot;&gt; <br>
+div.box1
+{
+  width:50px;
+  height:50px;
+  background:blue;
+  position:relative;
+  animation:boxmove 5s infinite;
+  animation-delay:0;
+  /* Firefox */
+  -moz-animation:boxmove 5s infinite;
+  -moz-animation-delay:0;
+  /* Safari and Google Chrome */
+  -webkit-animation:boxmove 5s infinite;
+  -webkit-animation-delay:0;
+}
+
+div.box2
+{
+  width:50px;
+  height:50px;
+  background:red;
+  position:relative;
+  animation:boxmove 5s infinite;
+  animation-delay:2s;
+  /* Firefox */
+  -moz-animation:boxmove 5s infinite;
+  -moz-animation-delay:2s;
+  /* Safari and Google Chrome */
+  -webkit-animation:boxmove 5s infinite;
+  -webkit-animation-delay:2s;
+}
+
+div.box3
+{
+  width:50px;
+  height:50px;
+  background:green;
+  position:relative;
+  animation:boxmove 5s infinite;
+  animation-delay:-2s;
+  /* Firefox */
+  -moz-animation:boxmove 5s infinite;
+  -moz-animation-delay:-2s;
+  /* Safari and Google Chrome */
+  -webkit-animation:boxmove 5s infinite;
+  -webkit-animation-delay:-2s;
+}
+
+@keyframes boxmove
+{
+  from {left:0px;}
+  to {left:210px;}
+}
+
+@-moz-keyframes boxmove /* Firefox */
+{
+  from {left:0px;}
+  to {left:210px;}
+}
+
+@-webkit-keyframes boxmove /* Safari and Google Chrome */
+{
+  from {left:0px;}
+  to {left:210px;}
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;<br>&lt;br/&gt;<br>&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;<br>&lt;br/&gt;<br>&lt;div class=&quot;box3&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+    <p>This produces the following result:</p>
+
+    <div class="output">
+
+      <style type="text/css">
+        div.box1 {
+          width: 50px;
+          height: 50px;
+          background: blue;
+          position: relative;
+          animation: boxmove 5s infinite;
+          animation-delay: 0;
+          /* Firefox */
+          -moz-animation: boxmove 5s infinite;
+          -moz-animation-delay: 0;
+          /* Safari and Google Chrome */
+          -webkit-animation: boxmove 5s infinite;
+          -webkit-animation-delay: 0;
+        }
+
+        div.box2 {
+          width: 50px;
+          height: 50px;
+          background: red;
+          position: relative;
+          animation: boxmove 5s infinite;
+          animation-delay: 2s;
+          /* Firefox */
+          -moz-animation: boxmove 5s infinite;
+          -moz-animation-delay: 2s;
+          /* Safari and Google Chrome */
+          -webkit-animation: boxmove 5s infinite;
+          -webkit-animation-delay: 2s;
+        }
+
+        div.box3 {
+          width: 50px;
+          height: 50px;
+          background: green;
+          position: relative;
+          animation: boxmove 5s infinite;
+          animation-delay: -2s;
+          /* Firefox */
+          -moz-animation: boxmove 5s infinite;
+          -moz-animation-delay: -2s;
+          /* Safari and Google Chrome */
+          -webkit-animation: boxmove 5s infinite;
+          -webkit-animation-delay: -2s;
+        }
+
+        @keyframes boxmove {
+          from {
+            left: 0px;
+          }
+
+          to {
+            left: 210px;
+          }
+        }
+
+        @-moz-keyframes boxmove /* Firefox */
+        {
+          from {
+            left: 0px;
+          }
+
+          to {
+            left: 210px;
+          }
+        }
+
+        @-webkit-keyframes boxmove /* Safari and Google Chrome */
+        {
+          from {
+            left: 0px;
+          }
+
+          to {
+            left: 210px;
+          }
+        }
+      </style>
+
+      <div class="box1"></div>
+      <br/>
+
+      <div class="box2"></div>
+      <br/>
+
+      <div class="box3"></div>
+
+    </div>
+    <br/>
+
+
+    <h1 class="common">Browser Support</h1>
+    <table class="reference bsReference">
+      <tr>
+        <th style="width: 20%;">Chrome</th>
+        <th style="width: 20%;">Firefox</th>
+        <th style="width: 20%;">IE</th>
+        <th style="width: 20%;">Safari</th>
+        <th style="width: 20%;">Opera</th>
+      </tr>
+      <tr>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">16.0<br/>5.0 -moz-</td>
+        <td class="bsSupportedAll">10.0</td>
+        <td class="bsSupportedSome">4.0 -webkit-</td>
+        <td class="bsSupportedAll">12.1<br/>12.0 -o-<br/>15.0 -webkit-</td>
+      </tr>
+    </table>
+
+    <h1 class="common">Miscellaneous Information</h1>
+    <table class="reference">
+      <tr>
+        <th align="left" nowrap>Inherited:</th>
+        <td width="90%">No</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Defined In:</th>
+        <td width="90%">CSS3</td>
+      </tr>
+      <tr>
+        <th align="left" nowrap>Default Value:</th>
+        <td width="90%">0</td>
+      </tr>
+    </table>
+
+    <!-- DATA END -->
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
