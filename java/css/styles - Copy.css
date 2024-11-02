@@ -1,0 +1,789 @@
+/* CSS Style Sheet for Quick Guides (Android) */
+
+body
+{
+    background-color: #cccccc;
+    font-family: sans-serif;
+}
+
+span.abouttitle
+{
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px gray;
+}
+
+span.aboutversion
+{
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 0.75em;
+}
+
+p {
+    font-size: 0.95em;
+    margin-top: 0px;
+}
+
+li {
+    font-size: 0.95em;
+}
+
+code {
+    font-size: 1.3em;
+    color: #009;
+}
+
+pre.common {
+    font-size: 1.1em;
+    color: #009;
+    background-color: #FFC;
+    border: 1px solid #e1e1e2;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+h1.common {
+    font-size: 1.0em;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding-top: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+    /*border-bottom:1px solid black;*/
+}
+
+h2.common {
+    font-size: 0.90em;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+h3.common {
+    font-size: 0.80em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+table {
+    font-size: 0.95em;
+}
+
+/* CSS for extra-extra-high-density screens */
+@media screen and (-webkit-device-pixel-ratio: 3.0)
+{
+    p {
+        font-size: 0.95em;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+
+    code {
+        font-size: 1.3em;
+    }
+
+    pre.common {
+        font-size: 1.1em;
+    }
+
+    h1.common {
+        font-size: 1.0em;
+    }
+
+    h2.common {
+        font-size: 0.90em;
+    }
+
+    h3.common {
+        font-size: 0.80em;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+        table.bsReferenceSmall th {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall td {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall .bsSupportedAll {
+            background-image: url('../images/checkmark-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedSome {
+            background-image: url('../images/warning-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedNone {
+            background-image: url('../images/x-16x16.png');
+            background-size: 1.0em;
+        }
+
+}
+
+/* CSS for extra-high-density screens */
+@media screen and (-webkit-device-pixel-ratio: 2.0)
+{
+    p {
+        font-size: 0.95em;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+
+    code {
+        font-size: 1.3em;
+    }
+
+    pre.common {
+        font-size: 1.1em;
+    }
+
+    h1.common {
+        font-size: 1.0em;
+    }
+
+    h2.common {
+        font-size: 0.90em;
+    }
+
+    h3.common {
+        font-size: 0.80em;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+        table.bsReferenceSmall th {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall td {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall .bsSupportedAll {
+            background-image: url('../images/checkmark-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedSome {
+            background-image: url('../images/warning-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedNone {
+            background-image: url('../images/x-16x16.png');
+            background-size: 1.0em;
+        }
+
+}
+
+/* CSS for high-density screens */
+@media screen and (-webkit-device-pixel-ratio: 1.5)
+{
+    p {
+        font-size: 0.95em;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+
+    code {
+        font-size: 1.3em;
+    }
+
+    pre.common {
+        font-size: 1.1em;
+    }
+
+    h1.common {
+        font-size: 1.0em;
+    }
+
+    h2.common {
+        font-size: 0.90em;
+    }
+
+    h3.common {
+        font-size: 0.80em;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+        table.bsReferenceSmall th {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall td {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall .bsSupportedAll {
+            background-image: url('../images/checkmark-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedSome {
+            background-image: url('../images/warning-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedNone {
+            background-image: url('../images/x-16x16.png');
+            background-size: 1.0em;
+        }
+}
+
+/* CSS for medium-density screens */
+@media screen and (-webkit-device-pixel-ratio: 1.0)
+{
+    p {
+        font-size: 0.95em;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+
+    code {
+        font-size: 1.0em;
+    }
+
+    pre.common {
+        font-size: 1.0em;
+    }
+
+    h1.common {
+        font-size: 1.0em;
+    }
+
+    h2.common {
+        font-size: 0.90em;
+    }
+
+    h3.common {
+        font-size: 0.80em;
+    }
+
+    table {
+        font-size: 0.75em;
+    }
+
+        table.bsReferenceSmall th {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall td {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall .bsSupportedAll {
+            background-image: url('../images/checkmark-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedSome {
+            background-image: url('../images/warning-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedNone {
+            background-image: url('../images/x-16x16.png');
+            background-size: 1.0em;
+        }
+
+}
+
+
+/* CSS for low-density screens */
+@media screen and (-webkit-device-pixel-ratio: 0.75)
+{
+    p {
+        font-size: 0.95em;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
+
+    code {
+        font-size: 1.3em;
+    }
+
+    pre.common {
+        font-size: 1.1em;
+    }
+
+    h1.common {
+        font-size: 1.0em;
+    }
+
+    h2.common {
+        font-size: 0.90em;
+    }
+
+    h3.common {
+        font-size: 0.80em;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+        table.bsReferenceSmall th {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall td {
+            font-size: 0.75em;
+        }
+
+        table.bsReferenceSmall .bsSupportedAll {
+            background-image: url('../images/checkmark-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedSome {
+            background-image: url('../images/warning-16x16.png');
+            background-size: 1.0em;
+        }
+
+        table.bsReferenceSmall .bsSupportedNone {
+            background-image: url('../images/x-16x16.png');
+            background-size: 1.0em;
+        }
+}
+
+.supportfooter
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+div.main
+{
+    padding: 10px;
+    border-style: solid;
+    -webkit-border-radius: 15px;
+    border-color: #888888;
+    background-color: #ffffff;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+div.output
+{
+    background-color: #f5f5f5;
+    border: 1px solid #e1e1e2;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+}
+
+div.box-3d-blue
+{
+    background-color: #0D5995;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+div.box-3d-red
+{
+    background-color: #D90000;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+div.box-3d-green
+{
+    background-color: #45B524;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+span.box-3d-blue
+{
+    background-color: #0D5995;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+span.box-3d-red
+{
+    background-color: #D90000;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+span.box-3d-green
+{
+    background-color: #45B524;
+    color: #ffffff;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.80em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+span.floatrightunsupportedbox
+{
+    float: right;
+    width: 78px;
+}
+
+span.floatrightchangedbox
+{
+    float: right;
+    width: 58px;
+}
+
+span.floatrighthtml5box
+{
+    float: right;
+    width: 46px;
+}
+
+div.added
+{
+    float: right;
+    background-color: #0D5995;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.8em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+div.deleted
+{
+    float: right;
+    background-color: #B20000;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.8em;
+    width: 46px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+div.smalldeprecated
+{
+    float: right;
+    background-color: #D96D00;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+    margin: 0 2px 0 0;
+    font-family: Arial;
+    font-size: 0.8em;
+    width: 66px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+}
+
+ol.common
+{
+    margin-left: 1em;
+    padding-left: 0.5em;
+    list-style: decimal;
+}
+
+ul.common
+{
+    margin-left: 1em;
+    padding-left: 0.5em;
+    list-style-type: square;
+}
+
+li.common
+{
+    margin: 0;
+    padding: 0;
+    padding-bottom: .5em;
+}
+
+ul.about
+{
+    margin-top: 0px;
+}
+
+li.about
+{
+    margin-top: 0px;
+    margin-left: -30px;
+}
+
+table.reference
+{
+    border: 1px solid #c3c3c3;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    table.reference th
+    {
+        background-color: #66ccff;
+        border: 1px solid #c3c3c3;
+        padding: 3px;
+        vertical-align: top;
+    }
+
+    table.reference td
+    {
+        border: 1px solid #c3c3c3;
+        padding: 3px;
+        vertical-align: top;
+    }
+
+table.bsReference
+{
+    border: 1px solid #c3c3c3;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    table.bsReference th
+    {
+        padding: 4px;
+        vertical-align: bottom;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        border: 1px solid #dadada;
+        text-align: center;
+        /*font-size:10px;*/
+        /*font-weight:normal;*/
+    }
+
+    table.bsReference td
+    {
+        padding: 4px;
+        vertical-align: bottom;
+        background-position: 20% 50%;
+        background-repeat: no-repeat;
+        border: 1px solid #dadada;
+        text-align: right;
+        font-size: 10px;
+    }
+
+    table.bsReference .bsSupportedAll {
+        background-image: url('../images/checkmark-16x16.png');
+        height: 16px;
+    }
+
+    table.bsReference .bsSupportedSome {
+        background-image: url('../images/warning-16x16.png');
+        height: 16px;
+    }
+
+    table.bsReference .bsSupportedNone {
+        background-image: url('../images/x-16x16.png');
+        height: 16px;
+    }
+
+
+table.bsReferenceSmall {
+    border: 1px solid #c3c3c3;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    table.bsReferenceSmall th {
+        padding: 4px;
+        vertical-align: bottom;
+        border: 1px solid #dadada;
+        text-align: center;
+        /*font-size:10px;*/
+        /*font-weight:normal;*/
+    }
+
+    table.bsReferenceSmall td {
+        padding: 4px;
+        vertical-align: bottom;
+        background-position: 20% 50%;
+        background-repeat: no-repeat;
+        border: 1px solid #dadada;
+        text-align: right;
+        font-size: 10px;
+    }
+
+    table.bsReferenceSmall .bsSupportedAll {
+        background-image: url('../images/checkmark-16x16.png');
+        height: 16px;
+    }
+
+    table.bsReferenceSmall .bsSupportedSome {
+        background-image: url('../images/warning-16x16.png');
+        height: 16px;
+    }
+
+    table.bsReferenceSmall .bsSupportedNone {
+        background-image: url('../images/x-16x16.png');
+        height: 16px;
+    }
+
+.deprecated
+{
+    background-color: #F00;
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.8em;
+}
+
+.deprecated_l1
+{
+    color: white;
+    letter-spacing: .6em;
+    font-weight: bold;
+}
+
+.deprecated_l2
+{
+    color: white;
+    font-size: small;
+}
+
+.notsupported
+{
+    color: #9F0000;
+}
+
+.htmlsupported
+{
+    color: rgb(0,0,0);
+    background-color: #ccc;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.bright_red
+{
+    color: rgb(255,0,0);
+}
+
+/* ----------------------------- IMAGES --------------------------- */
+
+
+/* Normal Density */
+
+.check_yes
+{
+    background: url('../images/check_yes.png') no-repeat center center;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.check_no
+{
+    background: url('../images/check_no.png') no-repeat center center;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+
+@media only screen and (min-device-width:768px){
+    table.bsReference .bsSupportedAll {
+        background-image: url('../images/checkmark-32x32.png');
+        height: 32px;
+    }
+
+    table.bsReference .bsSupportedSome {
+        background-image: url('../images/warning-32x32.png');
+        height: 32px;
+    }
+
+    table.bsReference .bsSupportedNone {
+        background-image: url('../images/x-32x32.png');
+        height: 32px;
+    }
+}
